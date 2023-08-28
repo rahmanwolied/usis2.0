@@ -1,0 +1,3221 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html style="height: 100%; overflow: hidden;" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="en">
+
+<title>BRAC University</title>
+
+<link rel="stylesheet" href="/academia/js/accordion_files/layout-default-latest.css"/>
+<link rel="shortcut icon" href="/academia/../academia/images/layout/favicon.gif"
+      type="image/x-icon"/>
+
+    <link rel="stylesheet" href="/academia/js/jquery/uploadify/uploadify.css"/>
+    <link rel="stylesheet" href="/academia/js/jquery/multiselects/css/ui.multiselect.css"
+          type="text/css"/>
+    <link rel="stylesheet" href="/academia/css/jquery.treeview.css" type="text/css"/>
+    <link rel="stylesheet" href="/academia/js/editor/jquery.cleditor.css" type="text/css"/>
+    <link rel="stylesheet" href="/academia/js/jquery/jqgrid/css/jquery.searchFilter.css"/>
+
+    <link rel="stylesheet" href="/academia/js/jpicker/css/jPicker-1.1.6.min.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="/academia/js/jpicker/jPicker.css"/>
+    <link rel="stylesheet" href="/academia/js/jquery/jqgrid/css/ui.jqgrid.css"/>
+
+<link rel="stylesheet" href="/academia/js/jquery/jgrowl-1.2.5/jquery.jgrowl.css"/>
+
+<link rel="stylesheet" href="/academia/js/jquery/theme/redmond/jquery-ui-1.8.5.custom.css"/>
+
+<link rel="stylesheet" href="/academia/js/message-renderer/message-renderer.css"/>
+<link rel="stylesheet" href="/academia/js/validation/css/validationEngine.jquery.css">
+<link rel="stylesheet" href="/academia/js/validation/css/template.css">
+<link rel="stylesheet" href="/academia/js/jquery/ui/css/jquery.ui.tooltip.css"/>
+<link rel="stylesheet" href="/academia/css/jquery.datepick.css" type="text/css"/>
+
+
+<link rel="stylesheet" href="/academia/css/main.css"/>
+
+<style type="text/css">
+
+.active-link {
+    color: #E17009 !important;
+}
+
+.ui-layout-center, /* has content-div */
+.ui-layout-west, /* has Accordion */
+.ui-layout-east, /* has content-div ... */
+.ui-layout-east .ui-layout-content {
+    /* content-div has Accordion */
+    padding: 0;
+    overflow: hidden;
+}
+
+.ui-layout-center P.ui-layout-content {
+    line-height: 1.4em;
+    margin: 0; /* remove top/bottom margins from <P> used as content-div */
+}
+
+h3, h4 {
+    /* Headers & Footer in Center & East panes */
+    font-size: 1.1em;
+    background: #EEF;
+    border: 1px solid #BBB;
+    border-width: 0 0 1px;
+    padding: 7px 10px;
+    margin: 0;
+}
+
+.ui-layout-east h4 {
+    /* Footer in East-pane */
+    font-size: 0.9em;
+    font-weight: normal;
+    border-width: 1px 0 0;
+}
+
+.layout-body {
+    position: relative;
+    height: 636px;
+    visibility: visible;
+    /*padding-top: 25px;*/
+}
+
+.left-panel-content {
+    position: absolute;
+    overflow: auto;
+    width: 100% !important;
+    width: 186px;
+    height: 95%;
+}
+</style>
+
+<script type="text/javascript" src="/academia/plugins/jquery-1.7/js/jquery/jquery-1.7.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/jquery.templateRenderer.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.widget.min.js"></script>
+
+
+<script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.autocomplete.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.dialog.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.progressbar.min.js"></script>
+
+
+<script type="text/javascript" src="/academia/js/jquery/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/common.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery.format.1.05.js"></script>
+
+
+<script type="text/javascript" src="/academia/js/message-renderer/message-renderer.js"></script>
+
+
+<script type="text/javascript" src="/academia/js/jquery/jgrowl-1.2.5/jquery.jgrowl_compressed.js"></script>
+
+<script type="text/javascript" src="/academia/js/validation/js/jquery.validationEngine-en.js"></script>
+
+<script type="text/javascript" src="/academia/js/validation/js/jquery.validationEngine.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/maskedinput-1.2.2/jquery.maskedinput-1.2.2.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/jquery.datepick.min.js"></script>
+
+
+<script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.tooltip.js"></script>
+
+
+
+<script type="text/javascript" src="/academia/js/jquery/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/jquery.ba-hashchange.js"></script>
+
+<script type="text/javascript" src="/academia/js/jquery/jquery.multiselect.js"></script>
+
+
+<link rel="stylesheet" href="/academia/js/jquery/fancybox/jquery.fancybox-1.3.4.css" media="screen"/>
+
+
+<script type="text/javascript" src="/academia/js/bublepopup/js/wtooltip.js"></script>
+
+
+
+    <script type="text/javascript" src="/academia/js/jpicker/jpicker-1.1.6.min.js"></script>
+
+
+    <script type="text/javascript" src="/academia/js/jquery/jquery.treeview.js"></script>
+
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/i18n/grid.locale-en.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/jquery.jqGrid.min.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.base.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.common.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.formedit.js"></script>
+
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/jquery.fmatter.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.custom.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/jquery.searchFilter.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.celledit.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.inlinedit.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.grouping.js"></script>
+
+
+    <script type="text/javascript" src="/academia/js/jquery/jqgrid/lib/grid.treegrid.js"></script>
+
+
+    <script type="text/javascript" src="/academia/js/jquery/uploadify/jquery.uploadify.v2.1.4.min.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/uploadify/swfobject.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.timepicker.js"></script>
+
+
+    <script type="text/javascript" src="/academia/js/jquery/multiselects/js/plugins/scrollTo/jquery.scrollTo-min.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/multiselects/js/ui.multiselect.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.draggable.min.js"></script>
+
+    <script type="text/javascript" src="/academia/js/jquery/ui/jquery.ui.droppable.min.js"></script>
+
+    <script type="text/javascript" src="/academia/js/editor/jquery.cleditor.min.js"></script>
+
+    <script type="text/javascript" src="/academia/js/editor/jquery.cleditor.xhtml.min.js"></script>
+
+    <script type="text/javascript" src="../js/editor/jquery.cleditor.js"></script>
+    <script type="text/javascript" src="/academia/js/accordion_files/debug.js"></script>
+
+
+
+
+<!-- REQUIRED scripts for layout widget -->
+<script type="text/javascript" src="/academia/js/accordion_files/jquery-ui-latest.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/accordion_files/jquery_002.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/accordion_files/jquery.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/accordion_files/themeswitchertool.js"></script>
+
+
+
+
+<script type="text/javascript" src="/academia/js/jquery.fixedheadertable.js"></script>
+
+
+<script type="text/javascript">
+    var interVal;
+    var dBThemeName = ''
+    var myLayout
+    var applicationurl = ''
+    $(document).ready(function () {
+
+        applicationurl = "/academia/"
+        myLayout = $('body').layout({
+            west__size: 250,
+            north__size: 50,
+            //,	east__size:			300
+            // RESIZE Accordion widget when panes resize
+            west__onresize: $.layout.callbacks.resizePaneAccordions
+            //,	east__onresize:		$.layout.callbacks.resizePaneAccordions
+        });
+
+
+        $('#google-plus-content').wTooltip({content: "Follow us on Google+"});
+        $('#face-book-content').wTooltip({content: "Follow us on Facebook"});
+        $('#twiter-tooltip-content').wTooltip({content: "Follow us on Twitter"});
+        $('#max-button-tooltip-content').wTooltip({content: "Maximize window"});
+
+
+        // ACCORDION - in the West pane
+        function getCurrentMenuItemIndex() {
+
+            var index = $.cookie("accordion");
+
+            return index;
+        }
+
+        var accordion = $("#accordion1");
+        var index = $.cookie("accordion");
+        var active = -1;
+
+        $("#accordion1").accordion({
+            header: 'h3',
+            collapsible: true,
+            fillSpace: false,
+            autoHeight: false,
+            active: active,
+            change: function (event, ui) {
+//
+            }
+
+        });
+        
+        // third example
+        $("#admission_setup_treeview").treeview({
+            animated: "fast",
+            unique: true
+        });
+        $("#leave_setup_treeview").treeview({
+            animated: "fast",
+            unique: true
+        });
+        $("#academic_management_treeview").treeview({
+            animated: "fast",
+            unique: true
+        });
+
+        
+
+
+        var dbThemeRole = -1
+                $.ajax({
+                    type: "POST",
+                    url: "/academia/theme/getActiveTheme",
+                    beforeSend: function (jqXHR, settings) {
+                        $("#loader_icon").show();
+                    },
+                    success: function (data) {
+                        if (data[0].name) {
+                            dBThemeName = data[0].name
+
+                            // THEME SWITCHER
+                            $.cookie('jquery-ui-theme', dBThemeName);
+
+                            if (dbThemeRole < 0) {
+                                addThemeSwitcher('.themeLocation', { position: 'relative', top: '0px', right: '0px', display: 'none' });
+                                $("#themeContainer").hide()
+                            } else {
+                                addThemeSwitcher('.themeLocation', { position: 'relative', top: '0px', right: '0px' });
+                            }
+                            setTimeout(myLayout.resizeAll, 1000);
+
+
+                        }
+                    },
+                    complete: function () {
+                        $("#loader_icon").hide();
+                    }
+                });
+
+
+        var newHash = ""
+        var date = new Date()
+        $('.autoload').click(function (e) {
+
+            newHash = window.location.hash.substring(1)
+            var action = $(this).attr("href") + "?" + date.getMilliseconds();//window.location.hash;
+
+            if (action.indexOf('?') > 0) {
+                action = action + "&" + date.getMilliseconds() + Math.random();
+            } else {
+                action = action + "?" + date.getMilliseconds() + Math.random();
+            }
+
+            window.location.hash = action;//$(this).attr("href");
+            action = ''
+            return false;
+        });
+
+
+        $(window).bind('hashchange', function () {
+            newHash = window.location.hash.substring(1);
+
+            if (newHash) {
+                var action = newHash;
+                if (action.indexOf('?') > 0) {
+                    action = action + "&" + date.getMilliseconds();
+                } else {
+                    action = action + "?" + date.getMilliseconds();
+                }
+
+                if (interVal) {
+                    clearInterval(interVal)
+                }
+
+                jQuery.ajax({
+                    type: 'post',
+                    url: action,
+                    beforeSend: function (jqXHR, settings) {
+                        if ($('#login_container').is(':visible')) {
+                            $('#login_container').hide()
+                        }
+                        $("#loader_icon").show();
+                    },
+                    success: function (data, textStatus) {
+                        $('.ui-layout-content').html(data);
+                        var newHashPortion = newHash
+                        if (newHash.indexOf("?") != -1) {
+                            newHashPortion = newHash.substr(0, newHash.indexOf("?"))
+                        }
+                        //alert(newHashPortion +"---"+newHash)
+                        var isSelected = true
+                        $("#accordion1 a").each(function () {
+                            //;
+                            if ($(this).hasClass('active-link')) {
+                                //alert(11)
+                                isSelected = false;
+
+                            }
+                        });
+
+                        $("#accordion1 .autoload").each(function () {
+                            if (($(this).attr('href') == "#" + newHashPortion) && isSelected) {
+
+                                $(this).addClass('active-link identification')
+                                $(this).parents('.left-menu-section-items').prev().click()
+                                $(this).prevAll("div .hitarea").each(function (index2, item2) {
+                                    $(item2).click()
+                                });
+
+                            }
+                        });
+                    },
+                    complete: function (XMLHttpRequest, textStatus) {
+                        $("#loader_icon").hide();
+                    }
+                });
+
+                return false;
+            }
+        });
+        $(window).trigger('hashchange');
+        toggleWestPanel()
+    }); // end document ready function
+    function toggleWestPanel() {
+        $(".ui-layout-toggler-west").click(function (event) {
+            $("#gbox_jqgrid-grid").width('100%');
+            $("#gview_jqgrid-grid").width('100%');
+            $(".ui-jqgrid-htable").width('100%');
+            if (parseInt($('.ui-jqgrid-bdiv').get(0).scrollHeight) > parseInt($('.ui-jqgrid-bdiv').height())) {
+                $(".ui-jqgrid-hbox").css('padding-right', '20px !important');
+            } else {
+                $(".ui-jqgrid-hbox").css('padding-right', '0px');
+            }
+            $(".ui-state-default .ui-jqgrid-hdiv").width('100%');
+            $(".ui-jqgrid-bdiv").width('100%');
+            $("#jqgrid-grid").width('100%');
+            $("#jqgrid-pager").width('100%');
+        });
+    }
+
+
+    function showApplicantDetails(rowId) {
+        // newHash = window.location.hash.substring(1)
+
+        if (rowId > 0) {
+            window.open('/academia/admissionForm/showApplicantForAdmin?id=' + rowId);
+        }
+        return false;
+    }
+
+    function showStudentDetails(rowId) {
+        if (rowId > 0) {
+            window.open('/academia/dashBoard/show#/academia/student/showProfileById?id_no=' + rowId);
+        }
+        return false;
+
+    }
+    function showApplicantDetailsForSuperAdmin(rowId) {
+        // newHash = window.location.hash.substring(1)
+
+        if (rowId > 0) {
+            window.open('/academia/dashBoard/show#/academia/admissionForm/showApplicantForSuperAdmin?id=' + rowId);
+        }
+        return false;
+    }
+    function showApplicantDetailsForAdmin(rowId) {
+        newHash = window.location.hash.substring(1)
+
+        if (rowId > 0) {
+            window.location.hash = '/academia/admissionForm/showAdmissionFormPdfForAdmin?id=' + rowId
+        }
+        return false;
+    }
+
+    var isMax = false;
+
+    function toggleLayout() {
+        if (!isMax) {
+            $("#max-button-tooltip-content").attr('src', "/academia/images/header/min_t.png")
+            $('#max-button-tooltip-content').wTooltip({content: "Minimize window"});
+            isMax = true;
+            $("#gbox_jqgrid-grid").width('100%');
+            $("#gview_jqgrid-grid").width('100%');
+            $(".ui-jqgrid-htable").width('100%');
+            if (parseInt($('.ui-jqgrid-bdiv').get(0).scrollHeight) > parseInt($('.ui-jqgrid-bdiv').height())) {
+                $(".ui-jqgrid-hbox").css('padding-right', '20px !important');
+            } else {
+                $(".ui-jqgrid-hbox").css('padding-right', '0px');
+            }
+            $(".ui-state-default .ui-jqgrid-hdiv").width('100%');
+            $(".ui-jqgrid-bdiv").width('100%');
+            $("#jqgrid-grid").width('100%');
+            $("#jqgrid-pager").width('100%');
+
+        }
+        else {
+            $("#max-button-tooltip-content").attr('src', "/academia/images/header/max_t.png")
+            $('#max-button-tooltip-content').wTooltip({content: "Maximize window"});
+            isMax = false;
+        }
+        $.each('north,east,south,west'.split(','), function () {
+            myLayout.toggle(this);
+        })
+
+    }
+    $.ajaxSetup({
+        error: function (xhr, status, err) {
+
+            if (xhr.status == 401) {
+
+                $.ajax({
+                    type: 'post',
+                    url: "/academia/login/showAjaxLogin",
+                    dataType: 'html',
+                    beforeSend: function (jqXHR, settings) {
+
+                    },
+                    success: function (html, textStatus) {
+
+
+                    $("#ajax-login-display-div").html(html)
+
+                    },
+                    complete:function(){
+                        $("#ajax-login-fancy-div").fancybox({
+                            'transitionIn'    :    'elastic',
+                            'transitionOut'    :    'elastic',
+                            'speedIn'        :    600,
+                            'speedOut'        :    200,
+                            'overlayShow'    :    true
+                        }).trigger('click')
+                    }
+                });
+
+            } else if (xhr.status == 402) {
+                alert("Sorry you are not authorize to view this page")
+            }
+        }
+
+    });
+</script>
+
+</head>
+
+<body>
+
+
+
+<div class="ui-layout-north">
+    <div>
+
+<script>
+    function displayMessageAcademia() {
+        if($("#login_container").is(":visible"))
+        {
+           $("#login_container").hide()
+        }
+        if($("#login_container_new_message").is(":visible"))
+        {
+           $("#login_container_new_message").hide()
+        }
+        $("#dialog-confirm-academia").dialog({
+                    resizable: true,
+                    width:350,
+                    height:280,
+                    modal: true,
+                    title: 'About Academia' ,
+                    buttons: {
+
+                        OK: function() {
+                            $(this).dialog('close');
+                        }
+                    }
+                });
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+            $('#test-login-container').mouseover(function(){
+
+				$('#test-login-container').children('ul').show();
+				}).mouseout(function(){
+				$('#test-login-container').children('ul').hide();
+				})
+
+        $('#test-login-container-new-message').mouseover(function(){
+
+				$('#test-login-container-new-message').children('ul').show();
+				}).mouseout(function(){
+				$('#test-login-container-new-message').children('ul').hide();
+				})
+
+
+
+
+        $('#color_theme_container li a').click(function() {
+            var path = "/academia/themes/" + $.trim($(this).text()).toLowerCase();
+            DocuAjax.json("/academia/menu/setTheme", {currentTheme: $.trim($(this).text()).toLowerCase()}, function() {
+                $("#currentThemeCss").attr('href', path + "/docuThemeRollerColor.css");
+                $("#currentThemeJs").attr('href', path + "/jquery-ui-custom.css");
+            });
+        });
+
+        getNotificationList();
+    });
+
+
+    function getNotificationList() {
+
+            $.ajax({
+                type:"POST",
+                url:"/academia/userNotification/notificationList?pageNo=0",
+                beforeSend:function (jqXHR, settings) {
+                    $("#loader_icon").show();
+                },
+                success:function (entity) {
+                    var count = 0;
+                    $.each(entity.userNotificationList, function(key,value) {
+                        if(value.message_status == false){
+                            $("#test-login-container-new-message ul").prepend('<li><a href="#/academia/userNotification/showAll?id='+value.id+'"><span class="tab">'+ value.subject +'</span></a></li>');
+                            count++
+                        }
+
+                    });
+                    $('#notificationCount').text(entity.totalUnread);
+
+//                    $("#notificationUI ul").append('<li><a href="/user/messages"><span class="tab">Message Center</span></a></li>');
+                },
+                complete:function () {
+                    $("#loader_icon").hide();
+                },
+                dataType:'json'
+            });
+    }
+</script>
+<style type="text/css">
+body {
+    font-family: arial;
+    font-size: 12px;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    /*float:left;*/
+    display: block;
+    width: 100px;
+    position: relative;
+    z-index: 500;
+    margin: 0 0px;
+}
+
+    /* this is the parent menu */
+#nav li a {
+    display: block; /*padding:8px 5px 0 5px;*/
+    /*font-weight:700;*/
+    height: 16px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    color: #333;
+}
+
+#nav li a:hover {
+    color: #fff;
+}
+
+    /* you can make a different style for default selected value */
+#nav a.selected {
+    color: #f00;
+}
+
+    /* submenu, it's hidden by default */
+#nav ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    list-style: none;
+}
+
+#nav ul li {
+    width: 100px; /*float:left;*/
+    border-top: 1px solid #fff;
+}
+
+    /* display block will make the link fill the whole area of LI */
+#nav ul a {
+    display: block;
+    height: 15px; /*padding: 8px 5px;*/
+    color: #666;
+}
+
+#nav ul a:hover {
+    text-decoration: underline;
+}
+
+    /*ui-layout-north ui-layout-pane ui-layout-pane-north*/
+.ui-layout-pane-north {
+    padding: 5px !important;
+}
+
+.top-left-logo {
+    width: 260px;
+    height: 40px;
+}
+
+.quare-logo {
+    width: 40px;
+    height: 40px;
+}
+
+    /* fix ie6 small issue */
+    /* we should always avoid using hack like this */
+    /* should put it into separate file : ) */
+    /**html #nav ul {*/
+    /*margin:0 0 0 -2px;*/
+    /*}*/
+</style>
+
+<div>
+    <div style="float:left; ">
+        
+            <div style="float: left;"><img src="/academia/images/header/BracAcademia.gif"
+                                           alt="BracAcademia" title="BracAcademia" border="0" class="top-left-logo"/>
+            </div>
+        
+    </div>
+
+    <div style="float:right;">
+        <div style="float: left;padding-right: 5px;">
+            <div class="welcome_container">
+                <!-- wecome container begin -->
+
+                <span class="text">
+                    
+                    Welcome Mosheur Rahman Wolied&nbsp;&nbsp;|
+                </span>
+                <ul>
+                    <li style="width: 63px">
+
+
+                            <a href="/academia/logout/index" class="btn_logout">Log Out</a>&nbsp;<span
+                                class="text" style="float: left;margin: 4px 0 0 0;">|</span>
+
+                    </li>
+
+                    <li id='test-login-container-new-message' style="width: 50px;">
+                        <span><a href="#" id="btn_login_new_message" class="btn_user_new_message"> <img src="/academia/images/new_message.png" align="absmiddle" alt="Home" height="23" width="30" /> <sup><span style="color: red; font-weight: bolder; font-size: 14px; " id="notificationCount"></span></sup>&nbsp;</a></span>
+                            <ul class="login_container" id="login_container_new_message" style="display:none;" >
+                                <li style="text-align: center;"><a href="#/academia/userNotification/showAll" class="autoload"> See All ...</a></li>
+                            </ul>
+                    </li>
+
+                    <li id='test-login-container'>
+                        
+                        <a href="#" id="btn_login" class="btn_user"></a>
+                        <ul class="login_container" id="login_container" style="display:none;" >
+                            <li><a href="/academia/dashBoard/show">
+                                <img src="/academia/images/header/home.jpg" align="absmiddle"
+                                     alt="Home"/> Home</a></li>
+                            <li><a href="/academia/systemUser/showMyAccounts" class="autoload">
+                                <img src="/academia/images/icon_my_acc.png" align="absmiddle"
+                                     alt="my account"/> My Account</a></li>
+                            <li><a href="/academia/systemUser/changePassword" class="autoload"><img
+                                    src="/academia/images/icon_chng_pass.png"
+                                    align="absmiddle" alt="change password"/> Change Password</a></li>
+                            
+                                    
+                                    
+                            <li><a href="#" onclick="displayMessageAcademia();"><img
+                                    src="/academia/images/about.jpg" align="absmiddle"
+                                    alt="About Academia"/> About Academia</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="themeLocation"></div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div style="float: left;">
+            
+                <div><img src="/academia/images/layout/Logo.bmp" alt="Logo" title="Logo" border="0"
+                          class="quare-logo"/></div>
+
+            
+
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+<div id="dialog-confirm-academia" title="About Academia" style="display: none">
+    <p>
+
+
+<div style="width: 300px;padding: 10px 10px 10px 10px;">
+  <head><title>About Academia</title></head>
+
+  <div>
+  <div style="float: left;width: 45px;padding-left: -10px;"><img src="/academia/images/layout/documenta.png" style="width: 40px;height: 40px;"/> </div>
+  <div style="float: left;font-size: 14px;padding-top: 10px;">Powered By: Documenta<sup>TM</sup> Ltd.</div>
+  <div style="clear: both;"></div>
+  </div>
+  <br/>
+  <div>
+      <p>Documenta <sup>TM</sup> Ltd.<br>House # 104, Flat # A4<br/>Park Road, Baridhara<br/>Dhaka-1212, Bangladesh<br/>Phone No. +88-02-8817597, +88-02-8812988</p>
+  </div>
+    <div style="float: left;"><a href="http://www.documentabd.com/" target="_blank">www.documentabd.com</a></div>
+ </div></p>
+</div></div>
+</div>
+
+
+<div class="ui-layout-center ui-widget ui-state-default">
+    <h3 class="ui-widget-header "><span class="ui-header-title"
+                                        id="ui-widget-header-text">Welcome To Mosheur Rahman Wolied Dashboards</span>
+
+        <span id="loader_icon" class="loader-icon"><img src="/academia/images/layout/ajax-loader.gif"
+                                                        alt="Loading...." title="Loading"
+                                                        border="0"/>&nbsp;Please wait....</span>
+
+        <span class="content-right"><a style="color: #0066ff;" id="toogle-content" href="javascript:toggleLayout();">
+            <img id="max-button-tooltip-content" src="/academia/images/header/max_t.png" alt="t"/>
+        </a></span>
+
+        <span class="content-right" id="time-display-panel">
+
+            <a href="#" onclick="window.open('https://plus.google.com/111940717867431868133')"><img
+                    id="google-plus-content" src="/academia/images/followus/google.png" alt="g"/></a>
+            <a href="#" onclick="window.open('http://www.facebook.com/bracuinfo')"><img id="face-book-content"
+                                                                                        src="/academia/images/followus/facebook.png"
+                                                                                        alt="f"/></a>
+            <a href="#" onclick="window.open('https://twitter.com/bracuinfo')"><img id="twiter-tooltip-content"
+                                                                                    src="/academia/images/followus/twitter.png"
+                                                                                    alt="t"/></a>
+        </span>
+    </h3>
+
+    <div class="ui-layout-content ui-widget-content layout-body">
+
+        
+
+<meta name="layout" content="main"/>
+<script type="text/javascript">
+    function viewMessage(divContent){
+        $("#"+divContent).toggle();
+        var idStr = divContent.split("_")
+        if($("#"+divContent).is(':visible')){
+            $("#displayText_"+idStr[1]).html("Hide&nbsp;&uarr;")
+        }else{
+            $("#displayText_"+idStr[1]).html("Show&nbsp;&darr;")
+        }
+    }
+  $(document).ready(function() {
+
+   
+    if ("" == null || "" == '') {
+        $('#certificate').hide();
+        $('#payslip').hide();
+        $('#photograph').hide();
+        $('#photographInstructions').hide();
+      }else{
+        $('#certificate').show();
+        $('#payslip').show();
+        $('#photograph').show();
+        $('#photographInstructions').show();
+      }
+
+      txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+      txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+      txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+      txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+      txt+= "<p>Platform: " + navigator.platform + "</p>";
+      txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+
+      jQuery.ajax({
+          type:'post',
+          data:"browserData="+txt,
+          url: '/academia/dashBoard/browserData',
+          beforeSend:function(jqXHR, settings) {
+              $("#loader_icon").show();
+          },
+          success:function(data, textStatus) {
+
+          },
+          error:function(XMLHttpRequest, textStatus, errorThrown) {
+          },
+          complete:function() {
+              $("#loader_icon").hide();
+          },
+          dataType:'html'
+      });
+  });
+
+</script>
+
+
+<link rel="stylesheet" href="/academia/js/widget/inettuts.css" type="text/css"/>
+<link rel="stylesheet" href="/academia/js/widget/inettuts.js.css" type="text/css"/>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jquery.jqplot.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.canvasTextRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.canvasAxisLabelRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.dateAxisRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.canvasTextRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.canvasAxisTickRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.categoryAxisRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.barRenderer.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.pointLabels.min.js"></script>
+
+<script type="text/javascript" src="/academia/js/./jqplot/jqplot.pieRenderer.min.js"></script>
+
+
+
+<script type="text/javascript" language="Javascript">
+    $(document).ready(function() {
+        $('#ui-widget-header-text').html('My Dashboard')});
+
+
+    //       $("#loader_icon").show();
+</script>
+<style type="text/css">
+.layer1 {
+    margin: 3px 0px 3px 0px;
+    padding: 0;
+    width: 347px;
+}
+
+.heading {
+    margin: 1px;
+    color: #184D77;
+    padding: 0px;
+    cursor: pointer;
+    position: relative;
+    /*background-color:#DFDFDF;*/
+}
+.content {
+    padding: 5px 10px;
+    background-color:#fafafa;
+}
+p { padding: 5px 0; }
+
+
+</style>
+<style type="text/css">
+table.dashboard-table {
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #a4ffb5;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.dashboard-table th {
+    border-width: 1px;
+    padding: 8px;
+    background-color: #89c99a;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+
+table.dashboard-table td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+
+table.dashboard-table tr:nth-child(odd) {
+    background-color: #d4e3e5;
+}
+
+table.dashboard-table tr:nth-child(even) {
+    background-color: #c3dde0;
+}
+</style>
+
+<fieldset class="water-mark-center ui-state-default"  style="min-height:95%;">
+
+    <div id="columns" style="width:100%;">
+        <ul id="column1" class="column">
+            <li class="widget" id="intro" style="padding: 0px;"></li>
+            
+
+                
+            
+
+                
+            
+
+        </ul>
+
+        <ul id="column2" class="column">
+            <li class="widget" id="intro"  style="padding: 0px;"></li>
+            
+
+                
+                    
+                        <li class="widget color-green">
+                    
+                    <div class="widget-head">
+                        <h3 style="background-color:transparent;"></h3>
+                    </div>
+                    <div class="widget-content">
+                        <input type="hidden" name="widgetid" id="widgetid" value="619489" />
+                        
+
+                            
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url:'/academia/academicSection/showStudentClassSchedule',
+            dataType:'html',
+            type:'post',
+            beforeSend:function (jqXHR, settings) {
+                $("#loader_icon").show();
+            },
+            success:function (html) {
+                $("#student-class-schedule-dashboard-div").html(html)
+            },
+            complete:function () {
+                $("#loader_icon").hide();
+            }
+        });
+    });
+
+
+
+</script>
+
+<div id="student-class-schedule-dashboard-div">
+
+</div>
+
+
+                        
+
+                    </div>
+                    </li>
+                
+            
+
+                
+                    
+                        <li class="widget color-yellow">
+                    
+                    <div class="widget-head">
+                        <h3 style="background-color:transparent;"></h3>
+                    </div>
+                    <div class="widget-content">
+                        <input type="hidden" name="widgetid" id="widgetid" value="619490" />
+                        
+
+                            
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: '/academia/academicSection/showStudentExamSchedule',
+            dataType: 'html',
+            type: 'post',
+            beforeSend:function (jqXHR, settings) {
+                $("#loader_icon").show();
+            },
+            success: function (html) {
+                $("#student-exam-schedule-dashboard-div").html(html)
+            },
+            complete:function () {
+                $("#loader_icon").hide();
+            }
+        });
+    });
+</script>
+
+<div id="student-exam-schedule-dashboard-div">
+</div>
+
+
+                        
+
+                    </div>
+                    </li>
+                
+            
+
+        </ul>
+
+    </div>
+</fieldset>
+
+<script type="text/javascript">
+    //    $("#loader_icon").show();
+
+    function viewMessage(divContent){
+        $("#"+divContent).toggle();
+        var idStr = divContent.split("_")
+        if($("#"+divContent).is(':visible')){
+            $("#displayText_"+idStr[1]).html("Hide&nbsp;&uarr;")
+        }else{
+            $("#displayText_"+idStr[1]).html("Show&nbsp;&darr;")
+        }
+    }
+    function toggleFormElement()
+    {
+        $("#formElement").toggle('slow')
+    }
+    function toggleEducationalDocument()
+    {
+        $("#educationalDocument").toggle('slow')
+    }
+    function togglePayslipUpload()
+    {
+        $("#payslipUpload").toggle('slow')
+    }
+
+
+    jQuery(document).ready(function() {
+
+        jQuery(".content").hide();
+        //toggle the componenet with class msg_body
+        jQuery(".heading").click(function()
+        {
+            jQuery(this).next(".content").slideToggle(500);
+        });
+    });
+</script>
+<script type="text/javascript" src="/academia/js/widget/inettuts.js"></script>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="display-none">
+        <a href="#ajax-login-display-div" id="ajax-login-fancy-div"></a>
+    </div>
+    <div class="display-none">
+        <div id="ajax-login-display-div" style="height: 300px;width: 460px;"> </div>
+    </div>
+</div>
+
+<div class="ui-layout-west">
+    <div class="left-panel-content">
+        
+
+
+<script type="text/javascript">
+    var isStartAdvising=false;
+
+    $(document).ready(function () {
+
+        if ("mosheur.r.wolied@gmail.com" != 'admin@academia.com') {
+            if ("" == null || "" == '') {
+                $('#certificate').hide();
+               // $('#payslip').hide();
+                $('#downloadPayslip').hide();
+                //$('#photograph').hide();
+                $('#photographInstructions').hide();
+            }
+            else {
+                $('#certificate').show();
+                $('#downloadPayslip').show();
+                $('#payslip').show();
+                $('#photograph').show();
+                $('#photographInstructions').show();
+            }
+
+            var isSubmitted = ""
+
+            if (isSubmitted == 'true') {
+                $('#certificate').hide();
+                $('#downloadPayslip').hide();
+                $('#payslip').hide();
+                $('#photograph').hide();
+                $('#photographInstructions').hide();
+            }
+        }
+
+        if ("" == null || "" == '' || isSubmitted == 'true') {
+            $('#certificate').hide();
+            //$('#payslip').hide();
+            $('#downloadPayslip').hide();
+            //$('#photograph').hide();
+            $('#photographInstructions').hide();
+        } else {
+
+            $('#certificate').show();
+            $('#payslip').show();
+            $('#downloadPayslip').show();
+            $('#photograph').show();
+            $('#photographInstructions').show();
+        }
+    });
+
+    function displayDashBoardContent(contentUrl, contentId) {
+        var actionUrl = "/academia/dashBoard/" + contentUrl;
+
+        jQuery.ajax({
+            type: 'post',
+            data: "applicantId=" + "",
+            url: actionUrl,
+            beforeSend: function (jqXHR, settings) {
+                $("#loader_icon").show();
+            },
+            success: function (data, textStatus) {
+                $("#" + contentId).html(data)
+                //executePostCondition(data);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                //alert (XMLHttpRequest)
+            },
+            complete: function () {
+                $("#loader_icon").hide();
+            },
+            dataType: 'html'
+        });
+        return false;
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.dashBoard_show').addClass('active-link');
+    });
+
+    function highlight(elem) {
+        if ($(".identification")) {
+            $(".identification").removeClass('active-link identification');
+        }
+        $(elem).addClass('active-link identification');
+
+
+    }
+    function fetchURLContent(fetchURL) {
+
+        if (fetchURL != '') {
+            $.ajax({
+                type: 'post',
+                url: fetchURL,
+                beforeSend: function (jqXHR, settings) {
+                    $("#loader_icon").show();
+                },
+                success: function (data) {
+                    $('.ui-layout-content').fadeOut(function () {
+                        $('.ui-layout-content').html(data).fadeIn();
+                    });
+                },
+                complete: function () {
+                    $("#loader_icon").hide();
+                }
+            });
+        }
+    }
+
+
+
+</script>
+<style type="text/css">
+.accordion-content-div {
+    border-top: 1px solid #D2E0EB;
+    clear: both;
+    float: left;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.icon {
+    background-image: none;
+    /*float: left;*/
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.div-margin {
+    margin: 5px;
+}
+</style>
+
+<div class="ui-layout-west">
+<div id="accordion1">
+
+
+
+
+
+
+
+    
+    <h3><a href="#">Student</a></h3>
+
+    <div class="left-menu-section-items">
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/student/showProfile" class="autoload"
+                onclick="highlight(this)">My Profile</a></div>
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/student/showRegistrationFormReport" class="autoload"
+                onclick="highlight(this)">Registration Form</a></div>
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/studentFieldChangePermittedField/changeProfileByStudent" class="autoload"
+                onclick="highlight(this)">Change Profile</a></div>
+
+
+
+        
+        
+        
+        
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/studentCourse/loadPreviousResultByStudent" class="autoload"
+                onclick="highlight(this)">Student Grade Sheet</a></div>
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/academicSection/showSectionForStudent" class="autoload"
+                onclick="highlight(this)">Show Class Schedule</a></div>
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/academicCourse/showCourseForStudent" class="autoload"
+                onclick="highlight(this)">Show Course Details</a></div>
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/academicCoursePreRequisite/showPreRequsiteCourse" class="autoload"
+                onclick="highlight(this)">Pre Requisite Course</a></div>
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/academicCourseEquival/showEquivalentCourse" class="autoload"
+                onclick="highlight(this)">Equivalent Course</a></div>
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/studentCourse/showStudentCourseSequence" class="autoload"
+                onclick="highlight(this)">Show Course Sequence</a></div>
+        
+
+        
+        
+        
+
+        <div class="accordion-content-div"></div>
+    </div>
+    
+
+    <h3><a href="#">Advising</a></h3>
+
+
+    <div class="left-menu-section-items">
+        
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a id="student-advising-panel-left-menu"
+                href="#/academia/studentCourse/showAdvising" class="autoload"
+                onclick="highlight(this)">Advising Panel</a></div>
+        
+    
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/studentCourse/showCourseStatusByStudent" class="autoload"
+                onclick="highlight(this)">Seat Status</a></div>
+    
+
+    
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/studentCourse/showClassScheduleInTabularFormatByStudent" class="autoload"
+                onclick="highlight(this)">Class Schedule</a></div>
+    
+
+        
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                class="icon"/> <a
+                href="#/academia/studentCourse/advisedCourse" class="autoload"
+                onclick="highlight(this)">Advised Course(s)</a></div>
+        
+
+        <div class="accordion-content-div"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    <h3><a href="#">Scholarship</a></h3>
+
+    <div class="left-menu-section-items">
+        
+
+            
+
+            <div class="accordion-content-div">
+                <img src="/academia/images/leftmenu/newApplicant.png"
+                     class="icon"/> <a
+                    href="#/academia/academiaSessionScholarship/showScholarshipApplicationForm" class="autoload"
+                    onclick="highlight(this)">Scholarship Form</a>
+            </div>
+
+            
+
+            <div class="accordion-content-div"></div>
+
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h3><a href="#3"><img src="/academia/images/leftmenu/security.png"
+                          class="icon"/>Security</a></h3>
+
+    <div class="left-menu-section-items">
+        
+
+
+
+
+
+
+
+    <div class="accordion-content-div"><img src="/academia/images/leftmenu/security_academia.png"
+                                            class="icon"/> <a
+            href="#/academia/systemUser/show" class="autoload"
+            onclick="highlight(this)">New User</a></div>
+
+
+
+
+
+
+
+<div class="accordion-content-div"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        <h3><a href="#5">Payment</a></h3>
+
+        <div class="left-menu-section-items">
+            <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                    class="icon"/> <a
+                    href="#/academia/studentPayment/showAdvisingPayslip" class="autoload"
+                    onclick="highlight(this)">Bank Payment Slip</a></div>
+    
+        
+
+        <div class="accordion-content-div"><img src="/academia/images/leftmenu/newApplicant.png"
+                                                `                                 class="icon"/> <a
+                href="#/academia/partialPaymentMaster/showPaymentStatus" class="autoload"
+                onclick="highlight(this)">Show Partial Payment Status</a></div>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h3><a href="#3">Medical</a></h3>
+
+    <div class="accordion-content-div"><img src="/academia/images/leftmenu/newStudent.png"
+                                            class="icon"/><a
+            href="#/academia/studentMedicalAssessment/showForStudent" class="autoload"
+            onclick="highlight(this)">Student Medical Assessment</a></div>
+
+    <div class="accordion-content-div"></div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<script type="text/javascript" language="Javascript">
+    var isLoaded = false;
+    function loadMenuDynamicSumMenu() {
+        if (!isLoaded) {
+            jQuery.ajax({
+                type: 'post',
+                url: "/academia/reportConfiguration/loadReportMenu",
+                beforeSend: function (jqXHR, settings) {
+                    $("#create-button").attr('disabled', 'disabled');
+                    $("#loader_icon").show();
+                },
+                success: function (html) {
+                    isLoaded=true;
+                    $("#dynamic-report-menu-display-div").html(html)
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                },
+                complete: function () {
+                    $("#create-button").removeAttr('disabled');
+                    $("#loader_icon").hide();
+                },
+                dataType: 'html'
+            });
+        }
+    }
+</script>
+    </div>
+
+    <div class="copyright-text">Copyright © BRAC University 2011</div>
+</div>
+
+</body>
+</html>
+
+<select name="academicCourse" id="academicCourse" style="width: 200px; height: 350px;" size="20" onchange="showDescription(this.value);" ondblclick="addNewCourseToStudent();">
+    <option value="2306204" style="color:blue">CSE110-[01]-(0)</option>
+    <option value="2306206" style="color:blue">CSE110-[02]-(0)</option>
+    <option value="2306208" style="color:blue">CSE110-[03]-(24)</option>
+    <option value="2306210" style="color:blue">CSE110-[04]-(17)</option>
+    <option value="2306212" style="color:blue">CSE110-[05]-(0)</option>
+    <option value="2306214" style="color:blue">CSE110-[06]-(0)</option>
+    <option value="2306218" style="color:blue">CSE110-[07]-(0)</option>
+    <option value="2306220" style="color:blue">CSE110-[08]-(0)</option>
+    <option value="2306222" style="color:blue">CSE110-[09]-(0)</option>
+    <option value="2306224" style="color:blue">CSE110-[10]-(0)</option>
+    <option value="2306226" style="color:blue">CSE110-[11]-(33)</option>
+    <option value="2306228" style="color:blue">CSE110-[12]-(32)</option>
+    <option value="2306230" style="color:blue">CSE110-[13]-(1)</option>
+    <option value="2306232" style="color:blue">CSE110-[14]-(0)</option>
+    <option value="2306234" style="color:blue">CSE110-[15]-(1)</option>
+    <option value="2306236" style="color:blue">CSE110-[16]-(0)</option>
+    <option value="2306238" style="color:blue">CSE110-[17]-(27)</option>
+    <option value="2306240" style="color:blue">CSE110-[18]-(0)</option>
+    <option value="2306242" style="color:blue">CSE110-[19]-(0)</option>
+    <option value="2306244" style="color:blue">CSE110-[20]-(0)</option>
+    <option value="2306246" style="color:blue">CSE110-[21]-(38)</option>
+    <option value="2306248" style="color:blue">CSE110-[22]-(0)</option>
+    <option value="2306250" style="color:blue">CSE110-[23]-(13)</option>
+    <option value="2306252" style="color:blue">CSE110-[24]-(21)</option>
+    <option value="2306254" style="color:blue">CSE110-[25]-(0)</option>
+    <option value="2306256" style="color:blue">CSE110-[26]-(0)</option>
+    <option value="2306258" style="color:blue">CSE110-[27]-(36)</option>
+    <option value="2306260" style="color:blue">CSE110-[28]-(0)</option>
+    <option value="2306262" style="color:blue">CSE110-[29]-(17)</option>
+    <option value="2306264" style="color:blue">CSE110-[30]-(0)</option>
+    <option value="2306266" style="color:blue">CSE110-[31]-(35)</option>
+    <option value="2306374" style="color:blue">CSE111-[01]-(1)</option>
+    <option value="2306376" style="color:blue">CSE111-[02]-(0)</option>
+    <option value="2306379" style="color:blue">CSE111-[03]-(0)</option>
+    <option value="2306381" style="color:blue">CSE111-[04]-(0)</option>
+    <option value="2306384" style="color:blue">CSE111-[05]-(5)</option>
+    <option value="2306387" style="color:blue">CSE111-[06]-(0)</option>
+    <option value="2306390" style="color:blue">CSE111-[07]-(0)</option>
+    <option value="2306393" style="color:blue">CSE111-[08]-(1)</option>
+    <option value="2306396" style="color:blue">CSE111-[09]-(32)</option>
+    <option value="2306399" style="color:blue">CSE111-[10]-(28)</option>
+    <option value="2306401" style="color:blue">CSE111-[11]-(4)</option>
+    <option value="2306404" style="color:blue">CSE111-[12]-(0)</option>
+    <option value="2306407" style="color:blue">CSE111-[13]-(3)</option>
+    <option value="2306411" style="color:blue">CSE111-[14]-(0)</option>
+    <option value="2306413" style="color:blue">CSE111-[15]-(0)</option>
+    <option value="2306415" style="color:blue">CSE111-[16]-(33)</option>
+    <option value="2306417" style="color:blue">CSE111-[17]-(0)</option>
+    <option value="2306420" style="color:blue">CSE111-[18]-(7)</option>
+    <option value="2306423" style="color:blue">CSE111-[19]-(3)</option>
+    <option value="2306427" style="color:blue">CSE111-[20]-(0)</option>
+    <option value="2306430" style="color:blue">CSE111-[21]-(7)</option>
+    <option value="2306433" style="color:blue">CSE111-[22]-(0)</option>
+    <option value="2306435" style="color:blue">CSE111-[23]-(20)</option>
+    <option value="2306441" style="color:blue">CSE111-[24]-(0)</option>
+    <option value="2306446" style="color:blue">CSE111-[25]-(0)</option>
+    <option value="2306453" style="color:blue">CSE111-[26]-(1)</option>
+    <option value="2306458" style="color:blue">CSE111-[27]-(0)</option>
+    <option value="2306461" style="color:blue">CSE111-[28]-(0)</option>
+    <option value="2306467" style="color:blue">CSE111-[29]-(0)</option>
+    <option value="2306472" style="color:blue">CSE111-[30]-(0)</option>
+    <option value="2306474" style="color:blue">CSE111-[31]-(23)</option>
+    <option value="2306479" style="color:blue">CSE111-[32]-(35)</option>
+    <option value="2306484" style="color:blue">CSE220-[01]-(0)</option>
+    <option value="2306490" style="color:blue">CSE220-[02]-(0)</option>
+    <option value="2306496" style="color:blue">CSE220-[03]-(0)</option>
+    <option value="2306501" style="color:blue">CSE220-[04]-(0)</option>
+    <option value="2306505" style="color:blue">CSE220-[05]-(0)</option>
+    <option value="2306509" style="color:blue">CSE220-[06]-(0)</option>
+    <option value="2306513" style="color:blue">CSE220-[07]-(0)</option>
+    <option value="2306517" style="color:blue">CSE220-[08]-(0)</option>
+    <option value="2306521" style="color:blue">CSE220-[09]-(0)</option>
+    <option value="2306525" style="color:blue">CSE220-[10]-(0)</option>
+    <option value="2306527" style="color:blue">CSE220-[11]-(0)</option>
+    <option value="2306529" style="color:blue">CSE220-[12]-(0)</option>
+    <option value="2306531" style="color:blue">CSE220-[13]-(0)</option>
+    <option value="2306535" style="color:blue">CSE220-[14]-(0)</option>
+    <option value="2306539" style="color:blue">CSE220-[15]-(0)</option>
+    <option value="2306541" style="color:blue">CSE220-[16]-(0)</option>
+    <option value="2306545" style="color:blue">CSE220-[17]-(0)</option>
+    <option value="2306549" style="color:blue">CSE220-[18]-(0)</option>
+    <option value="2306553" style="color:blue">CSE220-[19]-(0)</option>
+    <option value="2306557" style="color:blue">CSE220-[20]-(0)</option>
+    <option value="2306561" style="color:blue">CSE220-[21]-(0)</option>
+    <option value="2306565" style="color:blue">CSE220-[22]-(-1)</option>
+    <option value="2306569" style="color:blue">CSE220-[23]-(0)</option>
+    <option value="2306573" style="color:blue">CSE220-[24]-(7)</option>
+    <option value="2306577" style="color:blue">CSE220-[25]-(12)</option>
+    <option value="2306581" style="color:blue">CSE220-[26]-(0)</option>
+    <option value="2306585" style="color:blue">CSE220-[27]-(0)</option>
+    <option value="2306589" style="color:blue">CSE220-[28]-(0)</option>
+    <option value="2306593" style="color:blue">CSE220-[29]-(0)</option>
+    <option value="2306595" style="color:blue">CSE220-[30]-(0)</option>
+    <option value="2306597" style="color:blue">CSE220-[31]-(0)</option>
+    <option value="2306599" style="color:blue">CSE220-[32]-(0)</option>
+    <option value="2306601" style="color:blue">CSE220-[33]-(0)</option>
+    <option value="2306603" style="color:blue">CSE220-[34]-(0)</option>
+    <option value="2308273" style="color:blue">CSE220-[35]-(0)</option>
+    <option value="2306609" style="color:blue">CSE221-[01]-(0)</option>
+    <option value="2306613" style="color:blue">CSE221-[02]-(0)</option>
+    <option value="2306617" style="color:blue">CSE221-[03]-(0)</option>
+    <option value="2306619" style="color:blue">CSE221-[04]-(0)</option>
+    <option value="2306621" style="color:blue">CSE221-[05]-(0)</option>
+    <option value="2306623" style="color:blue">CSE221-[06]-(-2)</option>
+    <option value="2306627" style="color:blue">CSE221-[07]-(0)</option>
+    <option value="2306629" style="color:blue">CSE221-[08]-(0)</option>
+    <option value="2306631" style="color:blue">CSE221-[09]-(0)</option>
+    <option value="2306635" style="color:blue">CSE221-[10]-(0)</option>
+    <option value="2306637" style="color:blue">CSE221-[11]-(0)</option>
+    <option value="2306639" style="color:blue">CSE221-[12]-(0)</option>
+    <option value="2306641" style="color:blue">CSE221-[13]-(0)</option>
+    <option value="2306643" style="color:blue">CSE221-[14]-(0)</option>
+    <option value="2306645" style="color:blue">CSE221-[15]-(0)</option>
+    <option value="2306647" style="color:blue">CSE221-[16]-(0)</option>
+    <option value="2306649" style="color:blue">CSE221-[17]-(2)</option>
+    <option value="2306651" style="color:blue">CSE221-[18]-(0)</option>
+    <option value="2306653" style="color:blue">CSE221-[19]-(0)</option>
+    <option value="2306655" style="color:blue">CSE221-[20]-(0)</option>
+    <option value="2306657" style="color:blue">CSE221-[21]-(0)</option>
+    <option value="2306659" style="color:blue">CSE221-[22]-(25)</option>
+    <option value="2306661" style="color:blue">CSE221-[23]-(34)</option>
+    <option value="2306663" style="color:blue">CSE230-[01]-(0)</option>
+    <option value="2306664" style="color:blue">CSE230-[02]-(0)</option>
+    <option value="2306665" style="color:blue">CSE230-[03]-(0)</option>
+    <option value="2306666" style="color:blue">CSE230-[04]-(0)</option>
+    <option value="2306667" style="color:blue">CSE230-[05]-(0)</option>
+    <option value="2306668" style="color:blue">CSE230-[06]-(0)</option>
+    <option value="2306669" style="color:blue">CSE230-[07]-(0)</option>
+    <option value="2306670" style="color:blue">CSE230-[08]-(0)</option>
+    <option value="2306671" style="color:blue">CSE230-[09]-(0)</option>
+    <option value="2306672" style="color:blue">CSE230-[10]-(0)</option>
+    <option value="2306673" style="color:blue">CSE230-[11]-(0)</option>
+    <option value="2306674" style="color:blue">CSE230-[12]-(0)</option>
+    <option value="2306675" style="color:blue">CSE230-[13]-(0)</option>
+    <option value="2306676" style="color:blue">CSE230-[14]-(0)</option>
+    <option value="2306677" style="color:blue">CSE230-[15]-(0)</option>
+    <option value="2306678" style="color:blue">CSE230-[16]-(0)</option>
+    <option value="2306679" style="color:blue">CSE230-[17]-(0)</option>
+    <option value="2306680" style="color:blue">CSE230-[18]-(0)</option>
+    <option value="2306681" style="color:blue">CSE230-[19]-(0)</option>
+    <option value="2306682" style="color:blue">CSE230-[20]-(0)</option>
+    <option value="2306683" style="color:blue">CSE230-[21]-(0)</option>
+    <option value="2306684" style="color:blue">CSE230-[22]-(0)</option>
+    <option value="2306685" style="color:blue">CSE230-[23]-(0)</option>
+    <option value="2306686" style="color:blue">CSE230-[24]-(0)</option>
+    <option value="2306687" style="color:blue">CSE230-[25]-(0)</option>
+    <option value="2306688" style="color:blue">CSE230-[26]-(0)</option>
+    <option value="2306689" style="color:blue">CSE230-[27]-(0)</option>
+    <option value="2308288" style="color:blue">CSE230-[28]-(37)</option>
+    <option value="2308289" style="color:blue">CSE230-[29]-(38)</option>
+    <option value="2306690" style="color:blue">CSE250-[01]-(0)</option>
+    <option value="2306692" style="color:blue">CSE250-[02]-(0)</option>
+    <option value="2306694" style="color:blue">CSE250-[03]-(0)</option>
+    <option value="2306696" style="color:blue">CSE250-[04]-(0)</option>
+    <option value="2306698" style="color:blue">CSE250-[05]-(0)</option>
+    <option value="2306700" style="color:blue">CSE250-[06]-(0)</option>
+    <option value="2306702" style="color:blue">CSE250-[07]-(0)</option>
+    <option value="2306704" style="color:blue">CSE250-[08]-(0)</option>
+    <option value="2306706" style="color:blue">CSE250-[09]-(0)</option>
+    <option value="2306708" style="color:blue">CSE250-[10]-(0)</option>
+    <option value="2306710" style="color:blue">CSE250-[11]-(0)</option>
+    <option value="2306712" style="color:blue">CSE250-[12]-(0)</option>
+    <option value="2306714" style="color:blue">CSE250-[13]-(0)</option>
+    <option value="2306716" style="color:blue">CSE250-[14]-(0)</option>
+    <option value="2306718" style="color:blue">CSE250-[15]-(0)</option>
+    <option value="2306720" style="color:blue">CSE250-[16]-(0)</option>
+    <option value="2306722" style="color:blue">CSE250-[17]-(0)</option>
+    <option value="2306724" style="color:blue">CSE250-[18]-(0)</option>
+    <option value="2306726" style="color:blue">CSE250-[19]-(0)</option>
+    <option value="2306728" style="color:blue">CSE250-[20]-(0)</option>
+    <option value="2306730" style="color:blue">CSE250-[21]-(0)</option>
+    <option value="2306732" style="color:blue">CSE250-[22]-(0)</option>
+    <option value="2306734" style="color:blue">CSE250-[23]-(0)</option>
+    <option value="2306736" style="color:blue">CSE250-[24]-(0)</option>
+    <option value="2306738" style="color:blue">CSE250-[25]-(0)</option>
+    <option value="2308271" style="color:blue">CSE250-[26]-(0)</option>
+    <option value="2308291" style="color:blue">CSE250-[27]-(28)</option>
+    <option value="2308293" style="color:blue">CSE250-[28]-(29)</option>
+    <option value="2306740" style="color:blue">CSE251-[01]-(0)</option>
+    <option value="2306742" style="color:blue">CSE251-[02]-(0)</option>
+    <option value="2306744" style="color:blue">CSE251-[03]-(0)</option>
+    <option value="2306746" style="color:blue">CSE251-[04]-(0)</option>
+    <option value="2306748" style="color:blue">CSE251-[05]-(0)</option>
+    <option value="2306750" style="color:blue">CSE251-[06]-(0)</option>
+    <option value="2306752" style="color:blue">CSE251-[07]-(0)</option>
+    <option value="2306754" style="color:blue">CSE251-[08]-(18)</option>
+    <option value="2306758" style="color:blue">CSE251-[09]-(0)</option>
+    <option value="2306760" style="color:blue">CSE251-[10]-(0)</option>
+    <option value="2307086" style="color:blue">CSE251-[11]-(25)</option>
+    <option value="2307088" style="color:blue">CSE251-[12]-(0)</option>
+    <option value="2307090" style="color:blue">CSE251-[13]-(4)</option>
+    <option value="2307092" style="color:blue">CSE251-[14]-(21)</option>
+    <option value="2307094" style="color:blue">CSE251-[15]-(10)</option>
+    <option value="2307096" style="color:blue">CSE251-[16]-(0)</option>
+    <option value="2307098" style="color:blue">CSE251-[17]-(17)</option>
+    <option value="2307100" style="color:blue">CSE251-[18]-(18)</option>
+    <option value="2307102" style="color:blue">CSE251-[19]-(17)</option>
+    <option value="2307104" style="color:blue">CSE251-[20]-(10)</option>
+    <option value="2307106" style="color:blue">CSE251-[21]-(0)</option>
+    <option value="2307108" style="color:blue">CSE251-[22]-(25)</option>
+    <option value="2307110" style="color:blue">CSE251-[23]-(4)</option>
+    <option value="2307112" style="color:blue">CSE251-[24]-(0)</option>
+    <option value="2307114" style="color:blue">CSE251-[25]-(23)</option>
+    <option value="2306768" style="color:blue">CSE260-[01-for CS and CSE]-(0)</option>
+    <option value="2306770" style="color:blue">CSE260-[02-for CS and CSE]-(0)</option>
+    <option value="2306772" style="color:blue">CSE260-[03-for CS and CSE]-(0)</option>
+    <option value="2308268" style="color:blue">CSE260-[04-for CS and CSE]-(7)</option>
+    <option value="2306268" style="color:blue">CSE310-[01]-(22)</option>
+    <option value="2308318" style="color:blue">CSE310-[01-OM]-(-1)</option>
+    <option value="2306270" style="color:blue">CSE320-[01]-(0)</option>
+    <option value="2306271" style="color:blue">CSE320-[02]-(1)</option>
+    <option value="2306272" style="color:blue">CSE320-[03]-(0)</option>
+    <option value="2306273" style="color:blue">CSE320-[04]-(0)</option>
+    <option value="2306274" style="color:blue">CSE320-[05]-(0)</option>
+    <option value="2306275" style="color:blue">CSE320-[06]-(0)</option>
+    <option value="2306276" style="color:blue">CSE320-[07]-(0)</option>
+    <option value="2306277" style="color:blue">CSE320-[08]-(-1)</option>
+    <option value="2307116" style="color:blue">CSE320-[09]-(0)</option>
+    <option value="2307117" style="color:blue">CSE320-[10]-(0)</option>
+    <option value="2307118" style="color:blue">CSE320-[11]-(1)</option>
+    <option value="2307119" style="color:blue">CSE320-[12]-(0)</option>
+    <option value="2307120" style="color:blue">CSE320-[13]-(0)</option>
+    <option value="2307121" style="color:blue">CSE320-[14]-(0)</option>
+    <option value="2307122" style="color:blue">CSE320-[15]-(0)</option>
+    <option value="2307123" style="color:blue">CSE320-[16]-(0)</option>
+    <option value="2307124" style="color:blue">CSE320-[17]-(0)</option>
+    <option value="2307125" style="color:blue">CSE320-[18]-(0)</option>
+    <option value="2307126" style="color:blue">CSE320-[19]-(0)</option>
+    <option value="2307131" style="color:blue">CSE320-[20]-(0)</option>
+    <option value="2307132" style="color:blue">CSE320-[21]-(0)</option>
+    <option value="2308241" style="color:blue">CSE320-[22]-(0)</option>
+    <option value="2308242" style="color:blue">CSE320-[23]-(0)</option>
+    <option value="2308263" style="color:blue">CSE320-[24]-(0)</option>
+    <option value="2308290" style="color:blue">CSE320-[25]-(37)</option>
+    <option value="2308306" style="color:maroon">CSE321-[01-OM]-(-1)</option>
+    <option value="2306280" style="color:maroon">CSE321-[02]-(0)</option>
+    <option value="2306282" style="color:maroon">CSE321-[03]-(0)</option>
+    <option value="2306284" style="color:maroon">CSE321-[04]-(0)</option>
+    <option value="2307127" style="color:maroon">CSE321-[05]-(0)</option>
+    <option value="2308227" style="color:maroon">CSE321-[06]-(0)</option>
+    <option value="2308286" style="color:maroon">CSE321-[07]-(0)</option>
+    <option value="2306286" style="color:blue">CSE330-[01]-(0)</option>
+    <option value="2306288" style="color:blue">CSE330-[02]-(0)</option>
+    <option value="2306290" style="color:blue">CSE330-[03]-(0)</option>
+    <option value="2306292" style="color:blue">CSE330-[04]-(0)</option>
+    <option value="2306294" style="color:blue">CSE330-[05]-(0)</option>
+    <option value="2306296" style="color:blue">CSE330-[06]-(0)</option>
+    <option value="2306298" style="color:blue">CSE330-[07]-(-2)</option>
+    <option value="2306300" style="color:blue">CSE330-[08]-(0)</option>
+    <option value="2306302" style="color:blue">CSE330-[09]-(-1)</option>
+    <option value="2306304" style="color:blue">CSE330-[10]-(0)</option>
+    <option value="2306306" style="color:blue">CSE330-[11]-(0)</option>
+    <option value="2308230" style="color:blue">CSE330-[12]-(0)</option>
+    <option value="2308264" style="color:blue">CSE330-[13]-(31)</option>
+    <option value="2306308" style="color:blue">CSE331-[01]-(0)</option>
+    <option value="2306309" style="color:blue">CSE331-[02]-(0)</option>
+    <option value="2306310" style="color:blue">CSE331-[03]-(0)</option>
+    <option value="2306311" style="color:blue">CSE331-[04]-(0)</option>
+    <option value="2306312" style="color:blue">CSE331-[05]-(0)</option>
+    <option value="2306313" style="color:blue">CSE331-[06]-(0)</option>
+    <option value="2306314" style="color:blue">CSE331-[07]-(0)</option>
+    <option value="2306315" style="color:blue">CSE331-[08]-(0)</option>
+    <option value="2306316" style="color:blue">CSE331-[09]-(0)</option>
+    <option value="2306317" style="color:blue">CSE331-[10]-(0)</option>
+    <option value="2306318" style="color:blue">CSE331-[11]-(0)</option>
+    <option value="2306319" style="color:blue">CSE331-[12]-(3)</option>
+    <option value="2308266" style="color:blue">CSE331-[13]-(34)</option>
+    <option value="2306874" style="color:blue">CSE340-[01]-(0)</option>
+    <option value="2306875" style="color:blue">CSE340-[02]-(0)</option>
+    <option value="2306876" style="color:blue">CSE340-[03]-(0)</option>
+    <option value="2306877" style="color:blue">CSE340-[04]-(0)</option>
+    <option value="2306878" style="color:blue">CSE340-[05]-(0)</option>
+    <option value="2306879" style="color:blue">CSE340-[06]-(0)</option>
+    <option value="2306880" style="color:blue">CSE340-[07]-(0)</option>
+    <option value="2306881" style="color:blue">CSE340-[08]-(2)</option>
+    <option value="2308267" style="color:blue">CSE340-[09]-(4)</option>
+    <option value="2306438" style="color:blue">CSE341-[01]-(0)</option>
+    <option value="2306443" style="color:blue">CSE341-[02]-(0)</option>
+    <option value="2306450" style="color:blue">CSE341-[03]-(19)</option>
+    <option value="2306456" style="color:blue">CSE341-[04]-(15)</option>
+    <option value="2306463" style="color:blue">CSE341-[05]-(3)</option>
+    <option value="2306465" style="color:blue">CSE341-[06]-(1)</option>
+    <option value="2306469" style="color:blue">CSE341-[07]-(0)</option>
+    <option value="2306477" style="color:blue">CSE350-[01]-(13)</option>
+    <option value="2306488" style="color:blue">CSE350-[02]-(11)</option>
+    <option value="2306494" style="color:blue">CSE350-[03]-(0)</option>
+    <option value="2306499" style="color:blue">CSE350-[04]-(0)</option>
+    <option value="2306507" style="color:blue">CSE350-[05]-(18)</option>
+    <option value="2306511" style="color:blue">CSE350-[06]-(0)</option>
+    <option value="2306515" style="color:blue">CSE350-[07]-(0)</option>
+    <option value="2306519" style="color:blue">CSE350-[08]-(0)</option>
+    <option value="2306523" style="color:blue">CSE350-[09]-(1)</option>
+    <option value="2306533" style="color:blue">CSE350-[10]-(0)</option>
+    <option value="2306537" style="color:blue">CSE350-[11]-(0)</option>
+    <option value="2306543" style="color:blue">CSE360-[01]-(0)</option>
+    <option value="2306547" style="color:blue">CSE360-[02]-(0)</option>
+    <option value="2306551" style="color:blue">CSE360-[03]-(11)</option>
+    <option value="2306555" style="color:blue">CSE360-[04]-(26)</option>
+    <option value="2306559" style="color:blue">CSE360-[05]-(0)</option>
+    <option value="2306563" style="color:blue">CSE360-[06]-(13)</option>
+    <option value="2306567" style="color:blue">CSE370-[01]-(0)</option>
+    <option value="2308300" style="color:blue">CSE370-[01-OM]-(-1)</option>
+    <option value="2306571" style="color:blue">CSE370-[02]-(0)</option>
+    <option value="2306575" style="color:blue">CSE370-[03]-(0)</option>
+    <option value="2306579" style="color:blue">CSE370-[04]-(0)</option>
+    <option value="2306583" style="color:blue">CSE370-[05]-(0)</option>
+    <option value="2306587" style="color:blue">CSE370-[06]-(0)</option>
+    <option value="2306591" style="color:blue">CSE370-[07]-(-1)</option>
+    <option value="2306605" style="color:blue">CSE370-[08]-(0)</option>
+    <option value="2306607" style="color:blue">CSE370-[09]-(0)</option>
+    <option value="2306611" style="color:blue">CSE370-[10]-(0)</option>
+    <option value="2306615" style="color:blue">CSE370-[11]-(0)</option>
+    <option value="2308232" style="color:blue">CSE370-[12]-(31)</option>
+    <option value="2306117" style="color:blue">CSE400-[01]-(3869)</option>
+    <option value="2306625" style="color:blue">CSE420-[01]-(0)</option>
+    <option value="2306633" style="color:blue">CSE420-[02]-(0)</option>
+    <option value="2306756" style="color:blue">CSE420-[03]-(0)</option>
+    <option value="2306762" style="color:blue">CSE420-[04]-(0)</option>
+    <option value="2306764" style="color:blue">CSE420-[05]-(0)</option>
+    <option value="2306766" style="color:blue">CSE420-[06]-(17)</option>
+    <option value="2306818" style="color:blue">CSE420-[07]-(0)</option>
+    <option value="2306821" style="color:blue">CSE420-[08]-(16)</option>
+    <option value="2306882" style="color:blue">CSE421-[01]-(0)</option>
+    <option value="2308302" style="color:blue">CSE421-[01-OM]-(-1)</option>
+    <option value="2306884" style="color:blue">CSE421-[02]-(0)</option>
+    <option value="2306886" style="color:blue">CSE421-[03]-(0)</option>
+    <option value="2306888" style="color:blue">CSE421-[04]-(0)</option>
+    <option value="2306890" style="color:blue">CSE421-[05]-(0)</option>
+    <option value="2306892" style="color:blue">CSE421-[06]-(0)</option>
+    <option value="2306894" style="color:blue">CSE421-[07]-(0)</option>
+    <option value="2306896" style="color:blue">CSE421-[08]-(0)</option>
+    <option value="2306898" style="color:blue">CSE421-[09]-(0)</option>
+    <option value="2306900" style="color:blue">CSE421-[10]-(0)</option>
+    <option value="2308223" style="color:blue">CSE421-[11]-(0)</option>
+    <option value="2308225" style="color:blue">CSE421-[12]-(0)</option>
+    <option value="2306902" style="color:blue">CSE422-[01]-(0)</option>
+    <option value="2308299" style="color:blue">CSE422-[01-OM]-(-2)</option>
+    <option value="2306904" style="color:blue">CSE422-[02]-(0)</option>
+    <option value="2306906" style="color:blue">CSE422-[03]-(0)</option>
+    <option value="2306908" style="color:blue">CSE422-[04]-(0)</option>
+    <option value="2306910" style="color:blue">CSE422-[05]-(0)</option>
+    <option value="2306912" style="color:blue">CSE422-[06]-(0)</option>
+    <option value="2306914" style="color:blue">CSE422-[07]-(0)</option>
+    <option value="2306916" style="color:blue">CSE422-[08]-(0)</option>
+    <option value="2306918" style="color:blue">CSE422-[09]-(0)</option>
+    <option value="2306920" style="color:blue">CSE422-[10]-(2)</option>
+    <option value="2308234" style="color:blue">CSE422-[11]-(17)</option>
+    <option value="2306922" style="color:maroon">CSE423-[01]-(0)</option>
+    <option value="2306924" style="color:maroon">CSE423-[02]-(0)</option>
+    <option value="2306926" style="color:maroon">CSE423-[03]-(0)</option>
+    <option value="2306928" style="color:maroon">CSE423-[04]-(0)</option>
+    <option value="2306932" style="color:maroon">CSE423-[06]-(31)</option>
+    <option value="2306934" style="color:maroon">CSE423-[07]-(0)</option>
+    <option value="2306936" style="color:maroon">CSE423-[08]-(0)</option>
+    <option value="2306938" style="color:maroon">CSE423-[09]-(1)</option>
+    <option value="2306940" style="color:maroon">CSE423-[10]-(0)</option>
+    <option value="2306942" style="color:maroon">CSE423-[11]-(0)</option>
+    <option value="2306958" style="color:blue">CSE460-[01]-(20)</option>
+    <option value="2306960" style="color:blue">CSE460-[02]-(3)</option>
+    <option value="2306962" style="color:blue">CSE460-[03]-(8)</option>
+    <option value="2307769" style="color:blue">CSE460-[04]-(18)</option>
+    <option value="2307771" style="color:blue">CSE460-[05]-(1)</option>
+    <option value="2306964" style="color:blue">CSE460-[06]-(0)</option>
+    <option value="2306966" style="color:blue">CSE460-[07]-(0)</option>
+    <option value="2306968" style="color:blue">CSE460-[08]-(2)</option>
+    <option value="2306992" style="color:blue">CSE470-[01]-(0)</option>
+    <option value="2306993" style="color:blue">CSE470-[02]-(0)</option>
+    <option value="2306994" style="color:blue">CSE470-[03]-(0)</option>
+    <option value="2306995" style="color:blue">CSE470-[04]-(0)</option>
+    <option value="2306996" style="color:blue">CSE470-[05]-(0)</option>
+    <option value="2306997" style="color:blue">CSE470-[06]-(0)</option>
+    <option value="2306998" style="color:blue">CSE470-[07]-(0)</option>
+    <option value="2306999" style="color:blue">CSE470-[08]-(0)</option>
+    <option value="2307000" style="color:blue">CSE470-[09]-(0)</option>
+    <option value="2307001" style="color:blue">CSE470-[10]-(0)</option>
+    <option value="2308229" style="color:blue">CSE470-[11]-(0)</option>
+    <option value="2307002" style="color:blue">CSE471-[01]-(0)</option>
+    <option value="2307004" style="color:blue">CSE471-[02]-(0)</option>
+    <option value="2307006" style="color:blue">CSE471-[03]-(0)</option>
+    <option value="2307008" style="color:blue">CSE471-[04]-(18)</option>
+    <option value="2307010" style="color:blue">CSE471-[05]-(0)</option>
+    <option value="2307012" style="color:blue">CSE471-[06]-(0)</option>
+    <option value="2307014" style="color:blue">CSE471-[07]-(-1)</option>
+    <option value="2307016" style="color:blue">CSE471-[08]-(0)</option>
+    <option value="2307018" style="color:blue">CSE471-[09]-(18)</option>
+    <option value="2307422" style="color:blue">ENG101-[01]-(0)</option>
+    <option value="2307423" style="color:blue">ENG101-[02]-(0)</option>
+    <option value="2307424" style="color:blue">ENG101-[03 (reserved for CSE)]-(0)</option>
+    <option value="2307425" style="color:blue">ENG101-[04 (reserved for CSE)]-(0)</option>
+    <option value="2307426" style="color:blue">ENG101-[05 (reserved for CSE)]-(0)</option>
+    <option value="2307427" style="color:blue">ENG101-[06 (reserved for CSE)]-(0)</option>
+    <option value="2307428" style="color:blue">ENG101-[07]-(0)</option>
+    <option value="2307429" style="color:blue">ENG101-[08 (reserved for CSE)]-(0)</option>
+    <option value="2307430" style="color:blue">ENG101-[09]-(0)</option>
+    <option value="2307431" style="color:blue">ENG101-[10]-(0)</option>
+    <option value="2307432" style="color:blue">ENG101-[11]-(0)</option>
+    <option value="2307433" style="color:blue">ENG101-[12]-(0)</option>
+    <option value="2307434" style="color:blue">ENG101-[13]-(1)</option>
+    <option value="2307435" style="color:blue">ENG101-[14]-(2)</option>
+    <option value="2307436" style="color:blue">ENG101-[15]-(0)</option>
+    <option value="2307437" style="color:blue">ENG101-[16]-(0)</option>
+    <option value="2307438" style="color:blue">ENG101-[17 (reserved for CSE)]-(0)</option>
+    <option value="2307439" style="color:blue">ENG101-[18 (reserved for CSE)]-(0)</option>
+    <option value="2307440" style="color:blue">ENG101-[19 (reserved for CSE)]-(-1)</option>
+    <option value="2307441" style="color:blue">ENG101-[20 (reserved for CSE)]-(0)</option>
+    <option value="2307442" style="color:blue">ENG101-[21]-(0)</option>
+    <option value="2307443" style="color:blue">ENG101-[22 (reserved for CSE)]-(0)</option>
+    <option value="2307444" style="color:blue">ENG101-[23]-(0)</option>
+    <option value="2307445" style="color:blue">ENG101-[24]-(0)</option>
+    <option value="2307446" style="color:blue">ENG101-[25]-(0)</option>
+    <option value="2307447" style="color:blue">ENG101-[26]-(0)</option>
+    <option value="2307448" style="color:blue">ENG101-[27]-(0)</option>
+    <option value="2307449" style="color:blue">ENG101-[28]-(0)</option>
+    <option value="2307450" style="color:blue">ENG101-[29 (reserved for CSE)]-(0)</option>
+    <option value="2307451" style="color:blue">ENG101-[30 (reserved for CSE)]-(0)</option>
+    <option value="2307452" style="color:blue">ENG101-[31 (reserved for CSE)]-(0)</option>
+    <option value="2307453" style="color:blue">ENG101-[32 (reserved for CSE)]-(0)</option>
+    <option value="2307454" style="color:blue">ENG101-[33]-(0)</option>
+    <option value="2307455" style="color:blue">ENG101-[34 (reserved for CSE)]-(0)</option>
+    <option value="2307456" style="color:blue">ENG101-[35]-(1)</option>
+    <option value="2307457" style="color:blue">ENG101-[36]-(0)</option>
+    <option value="2307458" style="color:blue">ENG101-[37]-(0)</option>
+    <option value="2307459" style="color:blue">ENG101-[38]-(0)</option>
+    <option value="2307460" style="color:blue">ENG101-[39 (reserved for CSE)]-(0)</option>
+    <option value="2307461" style="color:blue">ENG101-[40 (reserved for CSE)]-(0)</option>
+    <option value="2307462" style="color:blue">ENG101-[41 (reserved for CSE)]-(0)</option>
+    <option value="2307463" style="color:blue">ENG101-[42]-(0)</option>
+    <option value="2307464" style="color:blue">ENG101-[43]-(1)</option>
+    <option value="2307465" style="color:blue">ENG101-[44]-(0)</option>
+    <option value="2307466" style="color:blue">ENG102-[01]-(1)</option>
+    <option value="2307467" style="color:blue">ENG102-[02 (reserved for CSE)]-(6)</option>
+    <option value="2307468" style="color:blue">ENG102-[03 (reserved for CSE)]-(3)</option>
+    <option value="2307469" style="color:blue">ENG102-[04]-(0)</option>
+    <option value="2307470" style="color:blue">ENG102-[05]-(10)</option>
+    <option value="2308275" style="color:blue">ENG102-[06]-(32)</option>
+    <option value="2308276" style="color:blue">ENG102-[08]-(16)</option>
+    <option value="2307217" style="color:blue">MAT110-[01]-(2)</option>
+    <option value="2307218" style="color:blue">MAT110-[02]-(1)</option>
+    <option value="2307219" style="color:blue">MAT110-[03]-(0)</option>
+    <option value="2307220" style="color:blue">MAT110-[04]-(0)</option>
+    <option value="2307221" style="color:blue">MAT110-[05]-(23)</option>
+    <option value="2307222" style="color:blue">MAT110-[06]-(32)</option>
+    <option value="2307223" style="color:blue">MAT110-[07]-(0)</option>
+    <option value="2307224" style="color:blue">MAT110-[08]-(0)</option>
+    <option value="2307225" style="color:blue">MAT110-[09]-(0)</option>
+    <option value="2307226" style="color:blue">MAT110-[10]-(0)</option>
+    <option value="2307227" style="color:blue">MAT110-[11]-(0)</option>
+    <option value="2307228" style="color:blue">MAT110-[12]-(0)</option>
+    <option value="2307229" style="color:blue">MAT110-[13]-(0)</option>
+    <option value="2307230" style="color:blue">MAT110-[14]-(0)</option>
+    <option value="2307231" style="color:blue">MAT110-[15]-(0)</option>
+    <option value="2307232" style="color:blue">MAT110-[16]-(0)</option>
+    <option value="2307233" style="color:blue">MAT110-[17]-(0)</option>
+    <option value="2307234" style="color:blue">MAT110-[18]-(0)</option>
+    <option value="2307235" style="color:blue">MAT110-[19]-(29)</option>
+    <option value="2307236" style="color:blue">MAT110-[20]-(23)</option>
+    <option value="2307237" style="color:blue">MAT110-[21]-(0)</option>
+    <option value="2307238" style="color:blue">MAT110-[22]-(7)</option>
+    <option value="2307239" style="color:blue">MAT110-[23]-(15)</option>
+    <option value="2307240" style="color:blue">MAT110-[24]-(30)</option>
+    <option value="2307241" style="color:blue">MAT110-[25]-(0)</option>
+    <option value="2307242" style="color:blue">MAT110-[26]-(0)</option>
+    <option value="2307243" style="color:blue">MAT110-[27]-(0)</option>
+    <option value="2307244" style="color:blue">MAT110-[28]-(0)</option>
+    <option value="2307245" style="color:blue">MAT110-[29]-(0)</option>
+    <option value="2307246" style="color:blue">MAT110-[30]-(1)</option>
+    <option value="2307247" style="color:blue">MAT120-[01]-(0)</option>
+    <option value="2307249" style="color:blue">MAT120-[02]-(0)</option>
+    <option value="2307251" style="color:blue">MAT120-[03]-(0)</option>
+    <option value="2307253" style="color:blue">MAT120-[04]-(0)</option>
+    <option value="2307255" style="color:blue">MAT120-[05]-(0)</option>
+    <option value="2307257" style="color:blue">MAT120-[06]-(0)</option>
+    <option value="2307259" style="color:blue">MAT120-[07]-(0)</option>
+    <option value="2307261" style="color:blue">MAT120-[08]-(0)</option>
+    <option value="2307263" style="color:blue">MAT120-[09]-(0)</option>
+    <option value="2307266" style="color:blue">MAT120-[10]-(0)</option>
+    <option value="2307269" style="color:blue">MAT120-[11]-(0)</option>
+    <option value="2307273" style="color:blue">MAT120-[12]-(0)</option>
+    <option value="2307277" style="color:blue">MAT120-[13]-(0)</option>
+    <option value="2307279" style="color:blue">MAT120-[14]-(0)</option>
+    <option value="2307282" style="color:blue">MAT120-[15]-(-1)</option>
+    <option value="2307288" style="color:blue">MAT120-[16]-(0)</option>
+    <option value="2307290" style="color:blue">MAT120-[17]-(0)</option>
+    <option value="2307292" style="color:blue">MAT120-[18]-(0)</option>
+    <option value="2307294" style="color:blue">MAT120-[19]-(0)</option>
+    <option value="2307296" style="color:blue">MAT120-[20]-(0)</option>
+    <option value="2307298" style="color:blue">MAT120-[21]-(0)</option>
+    <option value="2307300" style="color:blue">MAT120-[22]-(0)</option>
+    <option value="2307302" style="color:blue">MAT120-[23]-(0)</option>
+    <option value="2307304" style="color:blue">MAT120-[24]-(0)</option>
+    <option value="2307306" style="color:blue">MAT120-[25]-(0)</option>
+    <option value="2307308" style="color:blue">MAT120-[26]-(0)</option>
+    <option value="2307310" style="color:blue">MAT120-[27]-(0)</option>
+    <option value="2307312" style="color:blue">MAT120-[28]-(0)</option>
+    <option value="2307313" style="color:blue">MAT120-[29]-(1)</option>
+    <option value="2307315" style="color:blue">MAT120-[30]-(0)</option>
+    <option value="2307347" style="color:blue">MAT215-[01]-(1)</option>
+    <option value="2307348" style="color:blue">MAT215-[02]-(0)</option>
+    <option value="2307349" style="color:blue">MAT215-[03]-(0)</option>
+    <option value="2307350" style="color:blue">MAT215-[04]-(0)</option>
+    <option value="2307351" style="color:blue">MAT215-[05]-(0)</option>
+    <option value="2307352" style="color:blue">MAT215-[06]-(0)</option>
+    <option value="2307353" style="color:blue">MAT215-[07]-(0)</option>
+    <option value="2307354" style="color:blue">MAT215-[08]-(0)</option>
+    <option value="2307355" style="color:blue">MAT215-[09]-(0)</option>
+    <option value="2307356" style="color:blue">MAT215-[10]-(0)</option>
+    <option value="2307357" style="color:blue">MAT215-[11]-(-1)</option>
+    <option value="2307358" style="color:blue">MAT215-[12]-(0)</option>
+    <option value="2308277" style="color:blue">MAT215-[13]-(20)</option>
+    <option value="2308278" style="color:blue">MAT215-[14]-(27)</option>
+    <option value="2308279" style="color:blue">MAT215-[15]-(40)</option>
+    <option value="2308280" style="color:blue">MAT215-[16]-(38)</option>
+    <option value="2308281" style="color:blue">MAT215-[17]-(null)</option>
+    <option value="2307359" style="color:blue">MAT216-[01]-(0)</option>
+    <option value="2307360" style="color:blue">MAT216-[02]-(0)</option>
+    <option value="2307361" style="color:blue">MAT216-[03]-(0)</option>
+    <option value="2307362" style="color:blue">MAT216-[04]-(0)</option>
+    <option value="2307363" style="color:blue">MAT216-[05]-(0)</option>
+    <option value="2307364" style="color:blue">MAT216-[06]-(0)</option>
+    <option value="2307365" style="color:blue">MAT216-[07]-(0)</option>
+    <option value="2307366" style="color:blue">MAT216-[08]-(0)</option>
+    <option value="2307367" style="color:blue">MAT216-[09]-(0)</option>
+    <option value="2307368" style="color:blue">MAT216-[10]-(0)</option>
+    <option value="2307369" style="color:blue">MAT216-[11]-(0)</option>
+    <option value="2307370" style="color:blue">MAT216-[12]-(0)</option>
+    <option value="2307371" style="color:blue">MAT216-[13]-(0)</option>
+    <option value="2307372" style="color:blue">MAT216-[14]-(0)</option>
+    <option value="2307373" style="color:blue">MAT216-[15]-(0)</option>
+    <option value="2307374" style="color:blue">MAT216-[16]-(0)</option>
+    <option value="2307375" style="color:blue">MAT216-[17]-(0)</option>
+    <option value="2307376" style="color:blue">MAT216-[18]-(0)</option>
+    <option value="2308282" style="color:blue">MAT216-[19]-(0)</option>
+    <option value="2308283" style="color:blue">MAT216-[20]-(0)</option>
+    <option value="2308284" style="color:blue">MAT216-[21]-(28)</option>
+    <option value="2308285" style="color:blue">MAT216-[22]-(39)</option>
+    <option value="2307485" style="color:blue">PHY111-[01]-(0)</option>
+    <option value="2307487" style="color:blue">PHY111-[02]-(0)</option>
+    <option value="2307489" style="color:blue">PHY111-[03]-(0)</option>
+    <option value="2307491" style="color:blue">PHY111-[04]-(0)</option>
+    <option value="2307493" style="color:blue">PHY111-[05]-(0)</option>
+    <option value="2307495" style="color:blue">PHY111-[06]-(0)</option>
+    <option value="2307497" style="color:blue">PHY111-[07]-(0)</option>
+    <option value="2307499" style="color:blue">PHY111-[08]-(0)</option>
+    <option value="2307501" style="color:blue">PHY111-[09]-(0)</option>
+    <option value="2307503" style="color:blue">PHY111-[10]-(0)</option>
+    <option value="2307505" style="color:blue">PHY111-[11]-(0)</option>
+    <option value="2307507" style="color:blue">PHY111-[12]-(0)</option>
+    <option value="2307509" style="color:blue">PHY111-[13]-(12)</option>
+    <option value="2307511" style="color:blue">PHY111-[14]-(0)</option>
+    <option value="2307513" style="color:blue">PHY111-[15]-(0)</option>
+    <option value="2307515" style="color:blue">PHY111-[16]-(0)</option>
+    <option value="2307517" style="color:blue">PHY111-[17]-(2)</option>
+    <option value="2307519" style="color:blue">PHY111-[18]-(8)</option>
+    <option value="2307521" style="color:blue">PHY111-[19]-(2)</option>
+    <option value="2307523" style="color:blue">PHY111-[20]-(0)</option>
+    <option value="2307524" style="color:blue">PHY111-[21]-(0)</option>
+    <option value="2307526" style="color:blue">PHY111-[22]-(0)</option>
+    <option value="2307528" style="color:blue">PHY111-[23]-(0)</option>
+    <option value="2307530" style="color:blue">PHY111-[24]-(0)</option>
+    <option value="2307532" style="color:blue">PHY111-[25]-(0)</option>
+    <option value="2307534" style="color:blue">PHY111-[26]-(2)</option>
+    <option value="2307536" style="color:blue">PHY111-[27]-(1)</option>
+    <option value="2307538" style="color:blue">PHY111-[28]-(0)</option>
+    <option value="2307540" style="color:blue">PHY111-[29]-(0)</option>
+    <option value="2307542" style="color:blue">PHY111-[30]-(1)</option>
+    <option value="2307544" style="color:blue">PHY111-[31]-(0)</option>
+    <option value="2307546" style="color:blue">PHY111-[32]-(0)</option>
+    <option value="2307548" style="color:blue">PHY111-[33]-(19)</option>
+    <option value="2307550" style="color:blue">PHY111-[34]-(19)</option>
+    <option value="2307552" style="color:blue">PHY111-[35]-(0)</option>
+    <option value="2307554" style="color:blue">PHY111-[36]-(10)</option>
+    <option value="2307556" style="color:blue">PHY112-[01]-(0)</option>
+    <option value="2307558" style="color:blue">PHY112-[02]-(0)</option>
+    <option value="2307560" style="color:blue">PHY112-[03]-(0)</option>
+    <option value="2307562" style="color:blue">PHY112-[04]-(0)</option>
+    <option value="2307564" style="color:blue">PHY112-[05]-(0)</option>
+    <option value="2307566" style="color:blue">PHY112-[06]-(0)</option>
+    <option value="2307568" style="color:blue">PHY112-[07]-(0)</option>
+    <option value="2307570" style="color:blue">PHY112-[08]-(0)</option>
+    <option value="2307572" style="color:blue">PHY112-[09]-(0)</option>
+    <option value="2307574" style="color:blue">PHY112-[10]-(0)</option>
+    <option value="2307576" style="color:blue">PHY112-[11]-(0)</option>
+    <option value="2307578" style="color:blue">PHY112-[12]-(0)</option>
+    <option value="2307580" style="color:blue">PHY112-[13]-(0)</option>
+    <option value="2307582" style="color:blue">PHY112-[14]-(0)</option>
+    <option value="2307584" style="color:blue">PHY112-[15]-(0)</option>
+    <option value="2307586" style="color:blue">PHY112-[16]-(0)</option>
+    <option value="2307588" style="color:blue">PHY112-[17]-(0)</option>
+    <option value="2307590" style="color:blue">PHY112-[18]-(0)</option>
+    <option value="2307677" style="color:blue">STA201-[01]-(0)</option>
+    <option value="2307678" style="color:blue">STA201-[02]-(0)</option>
+    <option value="2307679" style="color:blue">STA201-[03]-(0)</option>
+    <option value="2307680" style="color:blue">STA201-[04]-(0)</option>
+    <option value="2307681" style="color:blue">STA201-[05]-(0)</option>
+    <option value="2307682" style="color:blue">STA201-[06]-(0)</option>
+    <option value="2307683" style="color:blue">STA201-[07]-(0)</option>
+    <option value="2307684" style="color:blue">STA201-[08]-(0)</option>
+    <option value="2307685" style="color:blue">STA201-[09]-(0)</option>
+    <option value="2307686" style="color:blue">STA201-[10]-(0)</option>
+    <option value="2307687" style="color:blue">STA201-[11]-(0)</option>
+    <option value="2307688" style="color:blue">STA201-[12]-(0)</option>
+    <option value="2307689" style="color:blue">STA201-[13]-(0)</option>
+    <option value="2307690" style="color:blue">STA201-[14]-(0)</option>
+    <option value="2307691" style="color:blue">STA201-[15]-(0)</option>
+    <option value="2307692" style="color:blue">STA201-[16]-(0)</option>
+    <option value="2307693" style="color:blue">STA201-[17]-(0)</option>
+    <option value="2307694" style="color:blue">STA201-[18]-(0)</option>
+    <option value="2307695" style="color:blue">STA201-[19]-(0)</option>
+    <option value="2307696" style="color:blue">STA201-[20]-(0)</option>
+    <option value="2307697" style="color:blue">STA201-[21]-(0)</option>
+    <option value="2307698" style="color:blue">STA201-[22]-(0)</option>
+    <option value="2307699" style="color:blue">STA201-[23]-(0)</option>
+    <option value="2307700" style="color:blue">STA201-[24]-(0)</option>
+    <option value="2307701" style="color:blue">STA201-[25]-(0)</option>
+    <option value="2307702" style="color:blue">STA201-[26]-(0)</option>
+    <option value="2307703" style="color:blue">STA201-[27]-(0)</option>
+    <option value="2307704" style="color:blue">STA201-[28]-(1)</option>
+    <option value="2307705" style="color:blue">STA201-[29]-(0)</option>
+    <option value="2307706" style="color:blue">STA201-[30]-(0)</option>
+    <option value="2307707" style="color:blue">STA201-[31]-(0)</option>
+    <option value="2307708" style="color:blue">STA201-[32]-(0)</option>
+    <option value="2307709" style="color:blue">STA201-[33]-(0)</option>
+    <option value="2307710" style="color:blue">STA201-[34]-(0)</option>
+    <option value="2307711" style="color:blue">STA201-[35]-(0)</option>
+    <option value="2307712" style="color:blue">STA201-[36]-(0)</option>
+    <option value="2307713" style="color:blue">STA201-[37]-(0)</option>
+    <option value="2307714" style="color:blue">STA201-[38]-(0)</option>
+    <option value="2307715" style="color:blue">STA201-[39]-(0)</option>
+    <option value="2307716" style="color:blue">STA201-[40]-(0)</option>
+    <option value="2307717" style="color:blue">STA201-[41]-(0)</option>
+    <option value="2307908">ACT201-[01]-(0)</option>
+    <option value="2307909">ACT201-[02]-(0)</option>
+    <option value="2307910">ACT201-[03]-(0)</option>
+    <option value="2307911">ACT201-[04]-(0)</option>
+    <option value="2307922">ACT201-[05]-(0)</option>
+    <option value="2307912">ACT201-[06]-(34)</option>
+    <option value="2307913">ACT201-[07]-(0)</option>
+    <option value="2307914">ACT201-[08]-(0)</option>
+    <option value="2307915">ACT201-[09]-(0)</option>
+    <option value="2307916">ACT201-[10]-(0)</option>
+    <option value="2307917">ACT202-[01]-(0)</option>
+    <option value="2307918">ACT202-[02]-(0)</option>
+    <option value="2307919">ACT202-[03]-(0)</option>
+    <option value="2307920">ACT202-[04]-(0)</option>
+    <option value="2307921">ACT202-[05]-(11)</option>
+    <option value="2307923">ACT301-[01]-(28)</option>
+    <option value="2307924">ACT301-[02]-(0)</option>
+    <option value="2307925">ACT421-[01]-(19)</option>
+    <option value="2307926">ACT422-[01]-(21)</option>
+    <option value="2307927">ACT423-[01]-(17)</option>
+    <option value="2307884">ANT101-[01]-(0)</option>
+    <option value="2307834">ANT101-[02]-(0)</option>
+    <option value="2307859">ANT101-[03]-(-1)</option>
+    <option value="2307897">ANT101-[04]-(0)</option>
+    <option value="2307898">ANT101-[05]-(0)</option>
+    <option value="2307841">ANT101-[06]-(0)</option>
+    <option value="2307890">ANT101-[07]-(0)</option>
+    <option value="2307900">ANT101-[08]-(0)</option>
+    <option value="2307850">ANT101-[09]-(0)</option>
+    <option value="2308210">ANT101-[10]-(0)</option>
+    <option value="2307829">ANT101-[11]-(0)</option>
+    <option value="2308110">ANT103-[01]-(36)</option>
+    <option value="2308239">ANT201-[01]-(18)</option>
+    <option value="2307861">ANT302-[01]-(11)</option>
+    <option value="2307904">ANT310-[01]-(23)</option>
+    <option value="2308314">ANT320-[01-OM]-(-1)</option>
+    <option value="2308309">ANT342-[01-OM]-(-2)</option>
+    <option value="2307901">ANT350-[01]-(1)</option>
+    <option value="2308310">ANT355-[01-OM]-(-1)</option>
+    <option value="2307903">ANT370-[01]-(0)</option>
+    <option value="2308304">ANT370-[01-OM]-(-1)</option>
+    <option value="2308303">ANT415-[01-OM]-(-1)</option>
+    <option value="2307905">ANT420-[01]-(2)</option>
+    <option value="2308313">ANT420-[01-OM]-(-1)</option>
+    <option value="2308320">ANT422-[01-OM]-(-1)</option>
+    <option value="2306118">APE400-[01]-(40)</option>
+    <option value="2306119">APE450-[01]-(40)</option>
+    <option value="2308064">ARC101-[01]-(65)</option>
+    <option value="2308065">ARC102-[01]-(40)</option>
+    <option value="2308076">ARC111-[01]-(64)</option>
+    <option value="2308077">ARC112-[01]-(35)</option>
+    <option value="2308078">ARC113-[01]-(13)</option>
+    <option value="2308079">ARC113-[02]-(27)</option>
+    <option value="2308092">ARC121-[01]-(35)</option>
+    <option value="2308093">ARC121-[02]-(35)</option>
+    <option value="2308116">ARC122-[01]-(32)</option>
+    <option value="2308117">ARC122-[02]-(25)</option>
+    <option value="2308095">ARC123-[01]-(37)</option>
+    <option value="2308066">ARC201-[01]-(17)</option>
+    <option value="2308067">ARC202-[01]-(22)</option>
+    <option value="2308081">ARC214-[01]-(0)</option>
+    <option value="2308080">ARC214-[02]-(23)</option>
+    <option value="2308121">ARC224-[01]-(6)</option>
+    <option value="2308122">ARC224-[02]-(20)</option>
+    <option value="2308118">ARC225-[01]-(24)</option>
+    <option value="2308111">ARC231-[01]-(27)</option>
+    <option value="2308119">ARC232-[01]-(7)</option>
+    <option value="2308096">ARC241-[01]-(16)</option>
+    <option value="2308097">ARC242-[01]-(11)</option>
+    <option value="2308114">ARC242-[02]-(28)</option>
+    <option value="2308098">ARC251-[01]-(10)</option>
+    <option value="2308113">ARC252-[01]-(17)</option>
+    <option value="2308130">ARC291-[01]-(0)</option>
+    <option value="2308131">ARC293-[01]-(30)</option>
+    <option value="2308197">ARC300-[01]-(10)</option>
+    <option value="2308068">ARC301-[01]-(10)</option>
+    <option value="2308069">ARC302-[01]-(9)</option>
+    <option value="2308083">ARC311-[01]-(16)</option>
+    <option value="2308084">ARC312-[01]-(17)</option>
+    <option value="2308082">ARC315-[01]-(15)</option>
+    <option value="2308123">ARC326-[01]-(0)</option>
+    <option value="2308124">ARC327-[01]-(23)</option>
+    <option value="2308125">ARC331-[01]-(5)</option>
+    <option value="2308126">ARC331-[02]-(24)</option>
+    <option value="2308099">ARC343-[01]-(21)</option>
+    <option value="2308103">ARC394-[01]-(3)</option>
+    <option value="2308104">ARC394-[02]-(24)</option>
+    <option value="2308070">ARC401-[01]-(10)</option>
+    <option value="2308085">ARC411-[01]-(17)</option>
+    <option value="2308086">ARC412-[01]-(20)</option>
+    <option value="2308087">ARC413-[01]-(15)</option>
+    <option value="2308107">ARC431-[01]-(20)</option>
+    <option value="2308120">ARC432-[01]-(19)</option>
+    <option value="2308101">ARC441-[01]-(17)</option>
+    <option value="2308100">ARC452-[01]-(23)</option>
+    <option value="2308127">ARC493-[01]-(16)</option>
+    <option value="2308071">ARC501-[01]-(15)</option>
+    <option value="2308072">ARC502-[01]-(28)</option>
+    <option value="2308073">ARC503-[01]-(22)</option>
+    <option value="2308088">ARC511-[01]-(21)</option>
+    <option value="2308089">ARC512-[01]-(25)</option>
+    <option value="2308108">ARC541-[01]-(29)</option>
+    <option value="2306842">BCH101-[01]-(24)</option>
+    <option value="2306844">BCH101-[02]-(35)</option>
+    <option value="2306846">BCH101-[03]-(32)</option>
+    <option value="2306127">BCH101-[04]-(22)</option>
+    <option value="2306128">BCH101-[05]-(12)</option>
+    <option value="2306129">BCH101-[06]-(35)</option>
+    <option value="2306847">BCH101-[07]-(0)</option>
+    <option value="2306130">BCH102-[01]-(0)</option>
+    <option value="2306131">BCH102-[02]-(0)</option>
+    <option value="2306132">BCH102-[03]-(1)</option>
+    <option value="2306848">BCH102-[04]-(0)</option>
+    <option value="2306849">BCH102-[05]-(2)</option>
+    <option value="2306850">BCH201-[01]-(-1)</option>
+    <option value="2306851">BCH201-[02]-(0)</option>
+    <option value="2306852">BCH201-[03]-(0)</option>
+    <option value="2306853">BCH202-[01]-(1)</option>
+    <option value="2306854">BIO101-[01]-(19)</option>
+    <option value="2306855">BIO101-[02]-(12)</option>
+    <option value="2306856">BIO101-[03]-(1)</option>
+    <option value="2306857">BIO101-[04]-(2)</option>
+    <option value="2306858">BIO101-[05]-(0)</option>
+    <option value="2306859">BIO101-[06]-(0)</option>
+    <option value="2306860">BIO101-[07]-(2)</option>
+    <option value="2306861">BIO101-[08]-(16)</option>
+    <option value="2306133">BIO101-[09]-(0)</option>
+    <option value="2306134">BIO101-[10]-(0)</option>
+    <option value="2306135">BIO101-[11]-(1)</option>
+    <option value="2306136">BIO101-[12]-(6)</option>
+    <option value="2306137">BIO101-[13]-(18)</option>
+    <option value="2306138">BIO101-[14]-(25)</option>
+    <option value="2306862">BIO101-[15]-(24)</option>
+    <option value="2308199">BIO101-[16]-(9)</option>
+    <option value="2306144">BTE101-[01]-(22)</option>
+    <option value="2306145">BTE101-[02]-(38)</option>
+    <option value="2306146">BTE101-[03]-(36)</option>
+    <option value="2306147">BTE102-[01]-(4)</option>
+    <option value="2306148">BTE102-[02]-(0)</option>
+    <option value="2306149">BTE102-[03]-(8)</option>
+    <option value="2306150">BTE103-[01]-(0)</option>
+    <option value="2306151">BTE103-[02]-(11)</option>
+    <option value="2306152">BTE103-[03]-(23)</option>
+    <option value="2306153">BTE155-[01]-(0)</option>
+    <option value="2306154">BTE155-[02]-(4)</option>
+    <option value="2306155">BTE155-[03]-(4)</option>
+    <option value="2306156">BTE155-[04]-(0)</option>
+    <option value="2306157">BTE201-[01]-(-2)</option>
+    <option value="2306158">BTE202-[01]-(-1)</option>
+    <option value="2306159">BTE203-[01]-(0)</option>
+    <option value="2306160">BTE204-[01]-(-1)</option>
+    <option value="2306161">BTE255-[01]-(0)</option>
+    <option value="2306162">BTE255-[02]-(0)</option>
+    <option value="2306163">BTE255-[03]-(0)</option>
+    <option value="2306164">BTE258-[01]-(4)</option>
+    <option value="2306165">BTE258-[02]-(12)</option>
+    <option value="2306166">BTE258-[03]-(3)</option>
+    <option value="2306167">BTE302-[01]-(6)</option>
+    <option value="2306168">BTE303-[01]-(0)</option>
+    <option value="2306169">BTE304-[01]-(15)</option>
+    <option value="2306170">BTE306-[01]-(4)</option>
+    <option value="2306171">BTE307-[01]-(25)</option>
+    <option value="2306172">BTE308-[01]-(7)</option>
+    <option value="2306173">BTE310-[01]-(25)</option>
+    <option value="2306174">BTE315-[01]-(22)</option>
+    <option value="2306175">BTE317-[01]-(18)</option>
+    <option value="2306863">BTE317-[02]-(6)</option>
+    <option value="2306176">BTE355-[01]-(5)</option>
+    <option value="2306177">BTE355-[02]-(2)</option>
+    <option value="2306178">BTE355-[03]-(11)</option>
+    <option value="2306122">BTE400-[01]-(14)</option>
+    <option value="2306179">BTE401-[01]-(-4)</option>
+    <option value="2306864">BTE401-[02]-(3)</option>
+    <option value="2306180">BTE402-[01]-(7)</option>
+    <option value="2306181">BTE403-[01]-(0)</option>
+    <option value="2306182">BTE404-[01]-(30)</option>
+    <option value="2306183">BTE406-[01]-(34)</option>
+    <option value="2306184">BTE411-[01]-(29)</option>
+    <option value="2306123">BTE450-[01]-(19)</option>
+    <option value="2307928">BUS102-[01]-(0)</option>
+    <option value="2307929">BUS102-[02]-(0)</option>
+    <option value="2307930">BUS102-[03]-(0)</option>
+    <option value="2307931">BUS102-[04]-(0)</option>
+    <option value="2307932">BUS102-[05]-(0)</option>
+    <option value="2307933">BUS102-[06]-(0)</option>
+    <option value="2307934">BUS102-[07]-(0)</option>
+    <option value="2307936">BUS102-[09]-(0)</option>
+    <option value="2307938">BUS102-[11]-(0)</option>
+    <option value="2307939">BUS102-[12]-(2)</option>
+    <option value="2307940">BUS102-[13]-(0)</option>
+    <option value="2307941">BUS102-[14]-(0)</option>
+    <option value="2307942">BUS102-[15]-(2)</option>
+    <option value="2307943">BUS102-[16]-(0)</option>
+    <option value="2307944">BUS102-[17]-(3)</option>
+    <option value="2307945">BUS102-[18]-(0)</option>
+    <option value="2307946">BUS102-[19]-(0)</option>
+    <option value="2307947">BUS201-[01]-(5)</option>
+    <option value="2307948">BUS201-[02]-(0)</option>
+    <option value="2307949">BUS201-[03]-(24)</option>
+    <option value="2307950">BUS201-[04]-(4)</option>
+    <option value="2307951">BUS201-[05]-(0)</option>
+    <option value="2307952">BUS201-[06]-(0)</option>
+    <option value="2307954">BUS201-[08]-(0)</option>
+    <option value="2307955">BUS201-[09]-(8)</option>
+    <option value="2307956">BUS201-[10]-(9)</option>
+    <option value="2307957">BUS201-[11]-(17)</option>
+    <option value="2307958">BUS201-[12]-(0)</option>
+    <option value="2307959">BUS201-[13]-(1)</option>
+    <option value="2307960">BUS201-[14]-(0)</option>
+    <option value="2307961">BUS201-[15]-(0)</option>
+    <option value="2307962">BUS201-[16]-(0)</option>
+    <option value="2307963">BUS201-[17]-(0)</option>
+    <option value="2307964">BUS201-[18]-(23)</option>
+    <option value="2307965">BUS201-[19]-(29)</option>
+    <option value="2307966">BUS201-[20]-(13)</option>
+    <option value="2307967">BUS203-[01]-(24)</option>
+    <option value="2307216">BUS204-[01]-(1)</option>
+    <option value="2307215">BUS204-[02]-(0)</option>
+    <option value="2307968">BUS204-[03]-(0)</option>
+    <option value="2307969">BUS204-[04]-(0)</option>
+    <option value="2307970">BUS209-[01]-(0)</option>
+    <option value="2307971">BUS209-[02]-(0)</option>
+    <option value="2307972">BUS209-[03]-(0)</option>
+    <option value="2307973">BUS209-[04]-(0)</option>
+    <option value="2307974">BUS209-[05]-(0)</option>
+    <option value="2308189">BUS301-[01]-(17)</option>
+    <option value="2307976">BUS301-[02]-(8)</option>
+    <option value="2307977">BUS301-[03]-(0)</option>
+    <option value="2307978">BUS301-[04]-(0)</option>
+    <option value="2307979">BUS301-[05]-(-1)</option>
+    <option value="2307980">BUS302-[01]-(14)</option>
+    <option value="2307981">BUS302-[02]-(5)</option>
+    <option value="2307982">BUS302-[03]-(5)</option>
+    <option value="2307983">BUS321-[01]-(0)</option>
+    <option value="2307984">BUS321-[02]-(0)</option>
+    <option value="2307985">BUS333-[01]-(31)</option>
+    <option value="2308133">CEE211-[01]-(19)</option>
+    <option value="2308135">CEE212-[01]-(8)</option>
+    <option value="2308138">CEE213-[01]-(26)</option>
+    <option value="2308134">CEE311-[01]-(7)</option>
+    <option value="2308137">CEE312-[01]-(0)</option>
+    <option value="2308129">CEE411-[01]-(21)</option>
+    <option value="2308136">CEE412-[01]-(29)</option>
+    <option value="2306865">CHE101-[01]-(0)</option>
+    <option value="2306866">CHE101-[02]-(0)</option>
+    <option value="2306868">CHE101-[03]-(0)</option>
+    <option value="2306869">CHE101-[04]-(0)</option>
+    <option value="2306870">CHE101-[05]-(0)</option>
+    <option value="2306871">CHE101-[06]-(0)</option>
+    <option value="2306872">CHE101-[07]-(0)</option>
+    <option value="2306873">CHE101-[08]-(0)</option>
+    <option value="2307028">CHE101-[09]-(0)</option>
+    <option value="2307029">CHE101-[10]-(0)</option>
+    <option value="2307030">CHE101-[11]-(0)</option>
+    <option value="2307031">CHE101-[12]-(0)</option>
+    <option value="2307032">CHE101-[13]-(0)</option>
+    <option value="2307033">CHE101-[14]-(0)</option>
+    <option value="2307034">CHE110-[01]-(3)</option>
+    <option value="2306867">CHE110-[02]-(1)</option>
+    <option value="2307472">CHN101-[01]-(0)</option>
+    <option value="2307473">CHN101-[02]-(0)</option>
+    <option value="2307474">CHN101-[03]-(1)</option>
+    <option value="2307475">CHN101-[04]-(4)</option>
+    <option value="2307476">CHN101-[05]-(1)</option>
+    <option value="2307477">CHN101-[06]-(2)</option>
+    <option value="2307478">CHN101-[07]-(17)</option>
+    <option value="2306186">CSE101-[01]-(0)</option>
+    <option value="2306188">CSE101-[02]-(0)</option>
+    <option value="2306192">CSE101-[03]-(0)</option>
+    <option value="2306194">CSE101-[04]-(2)</option>
+    <option value="2306197">CSE101-[05]-(0)</option>
+    <option value="2306201">CSE101-[06]-(0)</option>
+    <option value="2308321">CSE101-[07]-(38)</option>
+    <option value="2308323">CSE101-[08]-(38)</option>
+    <option value="2308074">CSE103-[01]-(30)</option>
+    <option value="2308075">CSE103-[02]-(30)</option>
+    <option value="2307767">CSE391-[01]-(14)</option>
+    <option value="2306190">CSE424-[01]-(0)</option>
+    <option value="2306944">CSE425-[01]-(0)</option>
+    <option value="2306945">CSE425-[02]-(0)</option>
+    <option value="2306946">CSE425-[03]-(0)</option>
+    <option value="2306947">CSE425-[04]-(0)</option>
+    <option value="2308270">CSE426-[01]-(37)</option>
+    <option value="2306216">CSE427-[01]-(0)</option>
+    <option value="2308319">CSE427-[01-OM]-(-1)</option>
+    <option value="2306217">CSE427-[02]-(0)</option>
+    <option value="2306948">CSE428-[01]-(0)</option>
+    <option value="2308217">CSE428-[02]-(0)</option>
+    <option value="2306196">CSE431-[01]-(0)</option>
+    <option value="2306199">CSE431-[02]-(0)</option>
+    <option value="2306950">CSE437-[01]-(0)</option>
+    <option value="2306951">CSE437-[02]-(0)</option>
+    <option value="2306200">CSE438-[01]-(0)</option>
+    <option value="2306952">CSE440-[01]-(0)</option>
+    <option value="2306953">CSE440-[02]-(0)</option>
+    <option value="2306954">CSE446-[01]-(0)</option>
+    <option value="2306956">CSE447-[01]-(0)</option>
+    <option value="2306185">CSE449-[01]-(0)</option>
+    <option value="2306970">CSE461-[01]-(34)</option>
+    <option value="2306972">CSE461-[02]-(31)</option>
+    <option value="2306974">CSE461-[03]-(0)</option>
+    <option value="2306976">CSE461-[04]-(0)</option>
+    <option value="2306978">CSE461-[05]-(0)</option>
+    <option value="2306980">CSE461-[06]-(0)</option>
+    <option value="2306982">CSE461-[07]-(0)</option>
+    <option value="2306984">CSE461-[08]-(0)</option>
+    <option value="2306986">CSE461-[09]-(0)</option>
+    <option value="2306988">CSE461-[10]-(0)</option>
+    <option value="2306990">CSE461-[11]-(11)</option>
+    <option value="2307020">CSE472-[01]-(21)</option>
+    <option value="2306203">CSE474-[01]-(26)</option>
+    <option value="2308219">CSE481-[01]-(35)</option>
+    <option value="2308221">CSE482-[01]-(37)</option>
+    <option value="2307022">CSE484-[01]-(8)</option>
+    <option value="2307024">CSE489-[01]-(20)</option>
+    <option value="2307026">CSE490-[01]-(0)</option>
+    <option value="2307129">CSE490-[02]-(31)</option>
+    <option value="2308295">CST301-[01-OM]-(-2)</option>
+    <option value="2307732">CST302-[01]-(2)</option>
+    <option value="2307728">CST302-[02]-(0)</option>
+    <option value="2307729">CST302-[03]-(0)</option>
+    <option value="2307754">CST303-[01]-(1)</option>
+    <option value="2307739">CST304-[01]-(0)</option>
+    <option value="2308305">CST304-[01-OM]-(-2)</option>
+    <option value="2307737">CST304-[02]-(0)</option>
+    <option value="2307740">CST305-[01]-(30)</option>
+    <option value="2307757">CST306-[01]-(1)</option>
+    <option value="2307758">CST307-[01]-(0)</option>
+    <option value="2307752">CST307-[02]-(0)</option>
+    <option value="2307756">CST308-[01]-(1)</option>
+    <option value="2307761">CST309-[01]-(13)</option>
+    <option value="2308296">DEV104-[01-OM]-(-2)</option>
+    <option value="2307764">DEV201-[01]-(0)</option>
+    <option value="2307655">ECE101-[03]-(2)</option>
+    <option value="2307657">ECE101-[04]-(2)</option>
+    <option value="2307656">ECE101L-[03]-(2)</option>
+    <option value="2307658">ECE101L-[04]-(2)</option>
+    <option value="2307659">ECE103-[03]-(4)</option>
+    <option value="2307660">ECE103-[04]-(3)</option>
+    <option value="2307663">ECE203-[03]-(4)</option>
+    <option value="2307664">ECE203L-[03]-(4)</option>
+    <option value="2307661">ECE205-[01]-(4)</option>
+    <option value="2307662">ECE205L-[01]-(4)</option>
+    <option value="2307787">ECE207-[01]-(3)</option>
+    <option value="2307788">ECE208-[01]-(3)</option>
+    <option value="2307794">ECE209-[02]-(2)</option>
+    <option value="2307645">ECE243-[02]-(5)</option>
+    <option value="2307644">ECE282-[02]-(4)</option>
+    <option value="2307651">ECE283-[01]-(3)</option>
+    <option value="2307652">ECE283L-[01]-(3)</option>
+    <option value="2307779">ECE305-[02]-(2)</option>
+    <option value="2307780">ECE305L-[02]-(3)</option>
+    <option value="2307778">ECE306-[02]-(2)</option>
+    <option value="2307789">ECE308-[01]-(4)</option>
+    <option value="2307790">ECE308L-[01]-(4)</option>
+    <option value="2307795">ECE309-[02]-(4)</option>
+    <option value="2307807">ECE341-[01]-(3)</option>
+    <option value="2307808">ECE341L-[01]-(3)</option>
+    <option value="2307810">ECE342-[02]-(2)</option>
+    <option value="2307815">ECE343-[01]-(2)</option>
+    <option value="2307816">ECE343L-[01]-(2)</option>
+    <option value="2307818">ECE344-[02]-(2)</option>
+    <option value="2307873">ECE349-[01]-(8)</option>
+    <option value="2307874">ECE350-[01]-(8)</option>
+    <option value="2307848">ECE359-[01]-(3)</option>
+    <option value="2308143">ECE361-[16]-(4)</option>
+    <option value="2308145">ECE361-[17]-(5)</option>
+    <option value="2308144">ECE362-[16]-(4)</option>
+    <option value="2308146">ECE362-[17]-(5)</option>
+    <option value="2308167">ECE365-[02]-(3)</option>
+    <option value="2308168">ECE366-[02]-(2)</option>
+    <option value="2307851">ECE369-[01]-(5)</option>
+    <option value="2308169">ECE373-[02]-(2)</option>
+    <option value="2308170">ECE373L-[02]-(2)</option>
+    <option value="2307853">ECE382-[01]-(2)</option>
+    <option value="2307855">ECE383-[01]-(2)</option>
+    <option value="2308185">ECE402D-[01]-(3)</option>
+    <option value="2308184">ECE402P-[01]-(1)</option>
+    <option value="2307868">ECE405-[01]-(5)</option>
+    <option value="2307860">ECE411-[01]-(3)</option>
+    <option value="2307864">ECE411L-[01]-(2)</option>
+    <option value="2307866">ECE412-[01]-(2)</option>
+    <option value="2307876">ECE413-[01]-(5)</option>
+    <option value="2307878">ECE414-[01]-(3)</option>
+    <option value="2308178">ECE441-[01]-(6)</option>
+    <option value="2308180">ECE441L-[01]-(8)</option>
+    <option value="2308179">ECE442-[01]-(8)</option>
+    <option value="2308183">ECE499P-[01]-(2)</option>
+    <option value="2307894">ECO101-[01]-(0)</option>
+    <option value="2307906">ECO101-[02]-(0)</option>
+    <option value="2307907">ECO101-[03]-(0)</option>
+    <option value="2307842">ECO101-[04]-(0)</option>
+    <option value="2307843">ECO101-[05]-(0)</option>
+    <option value="2307840">ECO101-[06]-(0)</option>
+    <option value="2307822">ECO101-[07]-(0)</option>
+    <option value="2307832">ECO101-[08]-(0)</option>
+    <option value="2307831">ECO101-[09]-(0)</option>
+    <option value="2307821">ECO101-[10]-(0)</option>
+    <option value="2307823">ECO101-[11]-(0)</option>
+    <option value="2307869">ECO102-[02]-(0)</option>
+    <option value="2307845">ECO102-[03]-(0)</option>
+    <option value="2307870">ECO102-[04]-(13)</option>
+    <option value="2307833">ECO102-[05]-(0)</option>
+    <option value="2308094">ECO104-[01]-(33)</option>
+    <option value="2307892">ECO201-[02]-(0)</option>
+    <option value="2307891">ECO202-[02]-(1)</option>
+    <option value="2307837">ECO206-[01]-(1)</option>
+    <option value="2307887">ECO206-[02]-(16)</option>
+    <option value="2307863">ECO207-[01]-(4)</option>
+    <option value="2307846">ECO207-[02]-(21)</option>
+    <option value="2307881">ECO208-[01]-(0)</option>
+    <option value="2307825">ECO209-[01]-(0)</option>
+    <option value="2307883">ECO301-[01]-(18)</option>
+    <option value="2307839">ECO303-[01]-(13)</option>
+    <option value="2307827">ECO306-[01]-(27)</option>
+    <option value="2307899">ECO308-[01]-(6)</option>
+    <option value="2307830">ECO309-[01]-(-1)</option>
+    <option value="2307888">ECO310-[01]-(12)</option>
+    <option value="2307824">ECO311-[01]-(0)</option>
+    <option value="2307826">ECO324-[01]-(0)</option>
+    <option value="2307838">ECO431-[01]-(14)</option>
+    <option value="2307896">ECO432-[01]-(35)</option>
+    <option value="2307609">EEE101-[01]-(18)</option>
+    <option value="2307611">EEE101-[02]-(0)</option>
+    <option value="2307613">EEE101-[03]-(1)</option>
+    <option value="2307615">EEE101-[04]-(14)</option>
+    <option value="2307610">EEE101L-[01]-(13)</option>
+    <option value="2307612">EEE101L-[02]-(9)</option>
+    <option value="2307614">EEE101L-[03]-(9)</option>
+    <option value="2307616">EEE101L-[04]-(13)</option>
+    <option value="2307617">EEE103-[01]-(1)</option>
+    <option value="2307618">EEE103-[02]-(5)</option>
+    <option value="2307619">EEE103-[03]-(9)</option>
+    <option value="2307620">EEE103-[04]-(15)</option>
+    <option value="2307621">EEE203-[01]-(14)</option>
+    <option value="2307623">EEE203-[02]-(1)</option>
+    <option value="2307625">EEE203-[03]-(0)</option>
+    <option value="2307622">EEE203L-[01]-(17)</option>
+    <option value="2307624">EEE203L-[02]-(1)</option>
+    <option value="2307626">EEE203L-[03]-(-1)</option>
+    <option value="2307627">EEE205-[01]-(0)</option>
+    <option value="2307629">EEE205-[02]-(0)</option>
+    <option value="2307631">EEE205-[03]-(22)</option>
+    <option value="2307628">EEE205L-[01]-(-4)</option>
+    <option value="2307630">EEE205L-[02]-(2)</option>
+    <option value="2307785">EEE207-[02]-(14)</option>
+    <option value="2307786">EEE208-[02]-(14)</option>
+    <option value="2307793">EEE209-[02]-(14)</option>
+    <option value="2307632">EEE221-[01]-(0)</option>
+    <option value="2307634">EEE221-[02]-(0)</option>
+    <option value="2307633">EEE221L-[01]-(2)</option>
+    <option value="2307635">EEE221L-[02]-(-1)</option>
+    <option value="2307636">EEE223-[01]-(7)</option>
+    <option value="2307637">EEE224-[01]-(6)</option>
+    <option value="2307638">EEE241-[01]-(0)</option>
+    <option value="2307639">EEE241-[02]-(6)</option>
+    <option value="2307640">EEE243-[01]-(0)</option>
+    <option value="2307641">EEE243-[02]-(9)</option>
+    <option value="2307642">EEE282-[01]-(0)</option>
+    <option value="2307643">EEE282-[03]-(0)</option>
+    <option value="2307647">EEE283-[01]-(6)</option>
+    <option value="2307649">EEE283-[02]-(0)</option>
+    <option value="2307648">EEE283L-[01]-(8)</option>
+    <option value="2307650">EEE283L-[02]-(4)</option>
+    <option value="2307653">EEE301-[02]-(3)</option>
+    <option value="2307654">EEE302-[02]-(7)</option>
+    <option value="2307773">EEE305-[01]-(0)</option>
+    <option value="2307775">EEE305-[02]-(2)</option>
+    <option value="2307774">EEE305L-[01]-(-3)</option>
+    <option value="2307776">EEE305L-[02]-(0)</option>
+    <option value="2307777">EEE306-[01]-(3)</option>
+    <option value="2307781">EEE308-[01]-(1)</option>
+    <option value="2307783">EEE308-[02]-(0)</option>
+    <option value="2307782">EEE308L-[01]-(-1)</option>
+    <option value="2307784">EEE308L-[02]-(0)</option>
+    <option value="2307791">EEE309-[01]-(0)</option>
+    <option value="2307792">EEE309-[02]-(0)</option>
+    <option value="2307796">EEE321-[01]-(6)</option>
+    <option value="2307798">EEE321-[02]-(2)</option>
+    <option value="2307797">EEE321L-[01]-(7)</option>
+    <option value="2307799">EEE321L-[02]-(4)</option>
+    <option value="2307801">EEE322-[01]-(29)</option>
+    <option value="2307800">EEE322-[02]-(8)</option>
+    <option value="2307803">EEE341-[01]-(23)</option>
+    <option value="2307805">EEE341-[02]-(0)</option>
+    <option value="2307802">EEE341L-[01]-(25)</option>
+    <option value="2307804">EEE341L-[01]-(25)</option>
+    <option value="2307806">EEE341L-[02]-(6)</option>
+    <option value="2307809">EEE342-[02]-(7)</option>
+    <option value="2307811">EEE343-[01]-(6)</option>
+    <option value="2307813">EEE343-[02]-(9)</option>
+    <option value="2307812">EEE343L-[01]-(17)</option>
+    <option value="2307814">EEE343L-[02]-(2)</option>
+    <option value="2307817">EEE344-[02]-(4)</option>
+    <option value="2308112">EEE345-[01]-(11)</option>
+    <option value="2307871">EEE349-[01]-(13)</option>
+    <option value="2307872">EEE350-[01]-(15)</option>
+    <option value="2307847">EEE359-[01]-(1)</option>
+    <option value="2308139">EEE361-[16]-(3)</option>
+    <option value="2308141">EEE361-[17]-(5)</option>
+    <option value="2308140">EEE362-[16]-(5)</option>
+    <option value="2308142">EEE362-[17]-(5)</option>
+    <option value="2308165">EEE365-[01]-(2)</option>
+    <option value="2308166">EEE366-[01]-(3)</option>
+    <option value="2307849">EEE369-[01]-(0)</option>
+    <option value="2308161">EEE373-[01]-(13)</option>
+    <option value="2308163">EEE373-[02]-(10)</option>
+    <option value="2308162">EEE373L-[01]-(13)</option>
+    <option value="2308164">EEE373L-[02]-(11)</option>
+    <option value="2307852">EEE382-[01]-(16)</option>
+    <option value="2307854">EEE383-[01]-(7)</option>
+    <option value="2307856">EEE384-[01]-(15)</option>
+    <option value="2307857">EEE385-[01]-(12)</option>
+    <option value="2308188">EEE400C-[01]-(1)</option>
+    <option value="2308186">EEE400D-[01]-(22)</option>
+    <option value="2308181">EEE400P-[01]-(17)</option>
+    <option value="2307867">EEE405-[01]-(19)</option>
+    <option value="2308151">EEE410-[02]-(4)</option>
+    <option value="2308152">EEE410-[03]-(4)</option>
+    <option value="2307858">EEE411-[01]-(15)</option>
+    <option value="2307862">EEE411L-[01]-(5)</option>
+    <option value="2307865">EEE412-[01]-(8)</option>
+    <option value="2307875">EEE413-[01]-(27)</option>
+    <option value="2307877">EEE414-[01]-(10)</option>
+    <option value="2308173">EEE423-[01]-(0)</option>
+    <option value="2308171">EEE425-[01]-(17)</option>
+    <option value="2308175">EEE426-[01]-(20)</option>
+    <option value="2308174">EEE433-[01]-(14)</option>
+    <option value="2308176">EEE441-[01]-(0)</option>
+    <option value="2308177">EEE442-[01]-(0)</option>
+    <option value="2308147">EEE465-[07]-(5)</option>
+    <option value="2308149">EEE465-[08]-(5)</option>
+    <option value="2308148">EEE466-[07]-(5)</option>
+    <option value="2308150">EEE466-[08]-(5)</option>
+    <option value="2308153">EEE472-[07]-(2)</option>
+    <option value="2308155">EEE472-[08]-(3)</option>
+    <option value="2308157">EEE474-[02]-(0)</option>
+    <option value="2308158">EEE474-[03]-(1)</option>
+    <option value="2308159">EEE476-[01]-(1)</option>
+    <option value="2308187">EEE499D-[01]-(4)</option>
+    <option value="2308182">EEE499P-[01]-(16)</option>
+    <option value="2307392">ENG091-[01]-(20)</option>
+    <option value="2307393">ENG091-[02]-(18)</option>
+    <option value="2307394">ENG091-[03 (reserved for CSE)]-(0)</option>
+    <option value="2307395">ENG091-[04 (reserved for CSE)]-(0)</option>
+    <option value="2307396">ENG091-[05 (reserved for CSE)]-(0)</option>
+    <option value="2307397">ENG091-[06]-(18)</option>
+    <option value="2307398">ENG091-[07]-(20)</option>
+    <option value="2307399">ENG091-[08 (reserved for CSE)]-(0)</option>
+    <option value="2307400">ENG091-[09]-(20)</option>
+    <option value="2307401">ENG091-[10]-(19)</option>
+    <option value="2307402">ENG091-[11]-(20)</option>
+    <option value="2307403">ENG091-[12]-(18)</option>
+    <option value="2307404">ENG091-[13]-(19)</option>
+    <option value="2307405">ENG091-[14]-(19)</option>
+    <option value="2307406">ENG091-[15]-(20)</option>
+    <option value="2307407">ENG091-[16]-(19)</option>
+    <option value="2307408">ENG091-[17 (reserved for CSE)]-(0)</option>
+    <option value="2307409">ENG091-[18 (reserved for CSE)]-(0)</option>
+    <option value="2307410">ENG091-[19 (reserved for CSE)]-(0)</option>
+    <option value="2307411">ENG091-[20]-(20)</option>
+    <option value="2307412">ENG091-[21]-(19)</option>
+    <option value="2307413">ENG091-[22 (reserved for CSE)]-(0)</option>
+    <option value="2307414">ENG091-[23]-(20)</option>
+    <option value="2307416">ENG091-[25 (reserved for CSE)]-(0)</option>
+    <option value="2307417">ENG091-[26]-(20)</option>
+    <option value="2307418">ENG091-[27]-(20)</option>
+    <option value="2307419">ENG091-[28 (reserved for CSE)]-(0)</option>
+    <option value="2307420">ENG091-[29]-(20)</option>
+    <option value="2307421">ENG091-[30]-(20)</option>
+    <option value="2307321">ENG111-[01]-(31)</option>
+    <option value="2307322">ENG111-[02]-(0)</option>
+    <option value="2307271">ENG113-[01]-(1)</option>
+    <option value="2307272">ENG113-[02]-(8)</option>
+    <option value="2307338">ENG114-[01]-(32)</option>
+    <option value="2307339">ENG114-[02]-(1)</option>
+    <option value="2307327">ENG115-[01]-(13)</option>
+    <option value="2307328">ENG115-[02]-(0)</option>
+    <option value="2307344">ENG201-[01]-(0)</option>
+    <option value="2307471">ENG203-[01]-(22)</option>
+    <option value="2307317">ENG205-[01]-(0)</option>
+    <option value="2307281">ENG212-[01]-(1)</option>
+    <option value="2307334">ENG215-[01]-(0)</option>
+    <option value="2307323">ENG217-[01]-(0)</option>
+    <option value="2307324">ENG217-[02]-(0)</option>
+    <option value="2307337">ENG218-[01]-(1)</option>
+    <option value="2307329">ENG221-[01]-(0)</option>
+    <option value="2307275">ENG242-[01]-(0)</option>
+    <option value="2307330">ENG301-[01]-(0)</option>
+    <option value="2307331">ENG301-[02]-(21)</option>
+    <option value="2307345">ENG327-[01]-(2)</option>
+    <option value="2307341">ENG331-[01]-(0)</option>
+    <option value="2307286">ENG334-[01]-(0)</option>
+    <option value="2307325">ENG335-[01]-(12)</option>
+    <option value="2307276">ENG354-[01]-(0)</option>
+    <option value="2307287">ENG404-[01]-(11)</option>
+    <option value="2307333">ENG411-[01]-(25)</option>
+    <option value="2307318">ENG414-[01]-(0)</option>
+    <option value="2307346">ENG438-[01]-(30)</option>
+    <option value="2307268">ENG439-[01]-(34)</option>
+    <option value="2307343">ENG440-[01]-(28)</option>
+    <option value="2308307">ENG440-[01-OM]-(-2)</option>
+    <option value="2307326">ENG464-[01]-(9)</option>
+    <option value="2308238">ENG466-[01]-(25)</option>
+    <option value="2307332">ENG490-[01]-(-8)</option>
+    <option value="2308115">ENV101-[01]-(2)</option>
+    <option value="2307377">ENV103-[01]-(0)</option>
+    <option value="2307378">ENV103-[02]-(0)</option>
+    <option value="2307379">ENV103-[03]-(0)</option>
+    <option value="2307380">ENV103-[04]-(0)</option>
+    <option value="2307381">ENV103-[05]-(0)</option>
+    <option value="2307382">ENV103-[06]-(0)</option>
+    <option value="2307383">ENV103-[07]-(0)</option>
+    <option value="2307384">ENV103-[08]-(0)</option>
+    <option value="2307385">ENV103-[09]-(0)</option>
+    <option value="2307386">ENV103-[10]-(0)</option>
+    <option value="2307387">ENV103-[11]-(0)</option>
+    <option value="2307388">ENV103-[12]-(0)</option>
+    <option value="2307975">FIN201-[01]-(0)</option>
+    <option value="2307986">FIN201-[02]-(11)</option>
+    <option value="2307987">FIN201-[03]-(0)</option>
+    <option value="2307988">FIN201-[04]-(0)</option>
+    <option value="2307989">FIN201-[05]-(0)</option>
+    <option value="2307990">FIN201-[06]-(0)</option>
+    <option value="2307991">FIN301-[01]-(3)</option>
+    <option value="2307992">FIN301-[02]-(0)</option>
+    <option value="2307993">FIN301-[03]-(0)</option>
+    <option value="2307994">FIN301-[04]-(0)</option>
+    <option value="2307995">FIN301-[05]-(21)</option>
+    <option value="2307996">FIN421-[01]-(0)</option>
+    <option value="2307997">FIN421-[02]-(0)</option>
+    <option value="2307998">FIN422-[01]-(5)</option>
+    <option value="2307999">FIN423-[01]-(29)</option>
+    <option value="2308000">FIN424-[01]-(20)</option>
+    <option value="2308001">FIN425-[01]-(0)</option>
+    <option value="2308002">FIN427-[01]-(5)</option>
+    <option value="2308003">FIN441-[01]-(11)</option>
+    <option value="2307479">FRN101-[01]-(26)</option>
+    <option value="2308298">FRN101-[01-OM]-(-1)</option>
+    <option value="2307480">FRN101-[02]-(13)</option>
+    <option value="2307481">FRN101-[03]-(23)</option>
+    <option value="2307482">FRN101-[04]-(26)</option>
+    <option value="2307389">GEO101-[01]-(8)</option>
+    <option value="2307390">GEO101-[02]-(12)</option>
+    <option value="2307340">HST102-[01]-(0)</option>
+    <option value="2308317">HST102-[01-OM]-(-1)</option>
+    <option value="2307319">HST103-[01]-(0)</option>
+    <option value="2307320">HST103-[02]-(1)</option>
+    <option value="2307335">HST103-[03]-(0)</option>
+    <option value="2307214">HST103-[04]-(0)</option>
+    <option value="2307265">HST103-[05]-(0)</option>
+    <option value="2307285">HST103-[06]-(0)</option>
+    <option value="2308315">HST104-[01-OM]-(-1)</option>
+    <option value="2307342">HST201-[01]-(7)</option>
+    <option value="2307336">HST302-[01]-(13)</option>
+    <option value="2307284">HST305-[01]-(7)</option>
+    <option value="2308312">HST404-[01-OM]-(-1)</option>
+    <option value="2307721">HUM101-[01]-(0)</option>
+    <option value="2307722">HUM101-[02]-(0)</option>
+    <option value="2307727">HUM101-[03]-(0)</option>
+    <option value="2307744">HUM101-[04]-(0)</option>
+    <option value="2307745">HUM101-[05]-(0)</option>
+    <option value="2307750">HUM101-[06]-(0)</option>
+    <option value="2307746">HUM101-[07]-(0)</option>
+    <option value="2307747">HUM101-[08]-(0)</option>
+    <option value="2307759">HUM101-[09]-(0)</option>
+    <option value="2307760">HUM101-[10]-(0)</option>
+    <option value="2307725">HUM101-[11]-(0)</option>
+    <option value="2307726">HUM101-[12]-(0)</option>
+    <option value="2307763">HUM102-[01]-(0)</option>
+    <option value="2307723">HUM102-[02]-(0)</option>
+    <option value="2307724">HUM102-[03]-(0)</option>
+    <option value="2307751">HUM207-[01]-(0)</option>
+    <option value="2307171">LAW101-[01]-(0)</option>
+    <option value="2307172">LAW101-[02]-(16)</option>
+    <option value="2307159">LAW102-[01]-(-4)</option>
+    <option value="2307212">LAW102-[02]-(0)</option>
+    <option value="2307820">LAW103-[01]-(-3)</option>
+    <option value="2307200">LAW103-[02]-(0)</option>
+    <option value="2308215">LAW103-[03]-(12)</option>
+    <option value="2308216">LAW103-[04]-(0)</option>
+    <option value="2307194">LAW104-[01]-(0)</option>
+    <option value="2308191">LAW104-[02]-(1)</option>
+    <option value="2308192">LAW104-[03]-(0)</option>
+    <option value="2308193">LAW104-[04]-(17)</option>
+    <option value="2307202">LAW201-[01]-(0)</option>
+    <option value="2307209">LAW201-[02]-(0)</option>
+    <option value="2308196">LAW201-[03]-(0)</option>
+    <option value="2308198">LAW201-[04]-(0)</option>
+    <option value="2307204">LAW202-[01]-(0)</option>
+    <option value="2308195">LAW202-[02-Closed]-(-4)</option>
+    <option value="2307179">LAW202-[03]-(0)</option>
+    <option value="2308194">LAW203-[01]-(2)</option>
+    <option value="2307203">LAW203-[02]-(8)</option>
+    <option value="2307207">LAW204-[01]-(18)</option>
+    <option value="2307208">LAW204-[02]-(0)</option>
+    <option value="2307213">LAW205-[01]-(-2)</option>
+    <option value="2308243">LAW205-[02]-(0)</option>
+    <option value="2307163">LAW301-[01]-(1)</option>
+    <option value="2308244">LAW301-[02]-(21)</option>
+    <option value="2307190">LAW302-[01]-(0)</option>
+    <option value="2308240">LAW302-[02]-(0)</option>
+    <option value="2307164">LAW303-[01]-(9)</option>
+    <option value="2307196">LAW303-[02]-(4)</option>
+    <option value="2307176">LAW304-[01]-(0)</option>
+    <option value="2307160">LAW305-[01]-(0)</option>
+    <option value="2307161">LAW306-[01]-(3)</option>
+    <option value="2307195">LAW307-[01]-(-2)</option>
+    <option value="2307211">LAW308-[01]-(0)</option>
+    <option value="2307198">LAW322-[01]-(0)</option>
+    <option value="2307197">LAW331-[01]-(1)</option>
+    <option value="2307199">LAW332-[01]-(5)</option>
+    <option value="2307173">LAW401-[01]-(0)</option>
+    <option value="2307210">LAW402-[01]-(0)</option>
+    <option value="2307819">LAW402-[02]-(12)</option>
+    <option value="2307765">LAW403-[01]-(0)</option>
+    <option value="2307205">LAW404-[01]-(1)</option>
+    <option value="2307206">LAW425-[01-OM]-(3)</option>
+    <option value="2307162">LAW434-[01]-(1)</option>
+    <option value="2307166">MAT091-[01]-(40)</option>
+    <option value="2307167">MAT091-[02]-(40)</option>
+    <option value="2307168">MAT091-[03]-(40)</option>
+    <option value="2307169">MAT091-[04]-(40)</option>
+    <option value="2307170">MAT091-[05]-(40)</option>
+    <option value="2307174">MAT092-[01]-(36)</option>
+    <option value="2307175">MAT092-[02]-(39)</option>
+    <option value="2307177">MAT092-[03]-(37)</option>
+    <option value="2307178">MAT092-[04]-(0)</option>
+    <option value="2307180">MAT092-[05]-(0)</option>
+    <option value="2307181">MAT092-[06]-(0)</option>
+    <option value="2307182">MAT101-[01]-(33)</option>
+    <option value="2307183">MAT101-[02]-(21)</option>
+    <option value="2307184">MAT101-[03]-(12)</option>
+    <option value="2307185">MAT101-[04]-(35)</option>
+    <option value="2307186">MAT101-[05]-(16)</option>
+    <option value="2307187">MAT101-[06]-(2)</option>
+    <option value="2307188">MAT101-[07]-(21)</option>
+    <option value="2307189">MAT101-[08]-(14)</option>
+    <option value="2307192">MAT101-[10]-(0)</option>
+    <option value="2307193">MAT101-[11]-(23)</option>
+    <option value="2307201">MAT101-[12]-(37)</option>
+    <option value="2308105">MAT104-[01]-(32)</option>
+    <option value="2308201">MAT123-[01]-(38)</option>
+    <option value="2308202">MAT203-[01]-(34)</option>
+    <option value="2308204">MAT312-[01]-(37)</option>
+    <option value="2308203">MAT321-[01]-(34)</option>
+    <option value="2308200">MAT324-[01]-(-9)</option>
+    <option value="2308205">MAT350-[01]-(33)</option>
+    <option value="2306120">MAT400-[01]-(40)</option>
+    <option value="2308207">MAT401-[01]-(40)</option>
+    <option value="2308090">MEE344-[01]-(0)</option>
+    <option value="2308091">MEE344-[02]-(26)</option>
+    <option value="2308004">MGT201-[01]-(19)</option>
+    <option value="2308005">MGT211-[01]-(20)</option>
+    <option value="2308006">MGT213-[01]-(0)</option>
+    <option value="2308007">MGT213-[02]-(0)</option>
+    <option value="2308008">MGT213-[03]-(2)</option>
+    <option value="2308009">MGT213-[04]-(0)</option>
+    <option value="2308010">MGT213-[05]-(0)</option>
+    <option value="2308011">MGT301-[01]-(16)</option>
+    <option value="2308012">MGT301-[02]-(0)</option>
+    <option value="2308013">MGT301-[03]-(18)</option>
+    <option value="2308014">MGT301-[04]-(0)</option>
+    <option value="2308015">MGT301-[05]-(0)</option>
+    <option value="2308016">MGT401-[01]-(19)</option>
+    <option value="2308017">MGT401-[02]-(-1)</option>
+    <option value="2308018">MGT401-[03]-(19)</option>
+    <option value="2308019">MGT401-[04]-(0)</option>
+    <option value="2308020">MGT421-[01]-(1)</option>
+    <option value="2308021">MGT422-[01]-(15)</option>
+    <option value="2308022">MGT423-[01]-(0)</option>
+    <option value="2308023">MGT424-[01]-(0)</option>
+    <option value="2308024">MGT425-[01]-(0)</option>
+    <option value="2308025">MGT427-[01]-(19)</option>
+    <option value="2308026">MGT431-[01]-(4)</option>
+    <option value="2308128">MGT511-[01]-(22)</option>
+    <option value="2307035">MIC101-[01]-(40)</option>
+    <option value="2307036">MIC101-[02]-(31)</option>
+    <option value="2307037">MIC101-[03]-(39)</option>
+    <option value="2307038">MIC101-[04]-(36)</option>
+    <option value="2307039">MIC102-[01]-(9)</option>
+    <option value="2307040">MIC102-[02]-(21)</option>
+    <option value="2307041">MIC102-[03]-(22)</option>
+    <option value="2307042">MIC102-[04]-(33)</option>
+    <option value="2307043">MIC102-[05]-(27)</option>
+    <option value="2307044">MIC155-[01]-(12)</option>
+    <option value="2307045">MIC155-[02]-(0)</option>
+    <option value="2307046">MIC155-[03]-(2)</option>
+    <option value="2307047">MIC155-[04]-(1)</option>
+    <option value="2307048">MIC155-[05]-(0)</option>
+    <option value="2307049">MIC155-[06]-(9)</option>
+    <option value="2307050">MIC155-[07]-(0)</option>
+    <option value="2307051">MIC201-[01]-(0)</option>
+    <option value="2307052">MIC201-[02]-(0)</option>
+    <option value="2307053">MIC202-[01]-(0)</option>
+    <option value="2307054">MIC202-[02]-(4)</option>
+    <option value="2307055">MIC203-[01]-(0)</option>
+    <option value="2307056">MIC203-[02]-(0)</option>
+    <option value="2307057">MIC204-[01]-(7)</option>
+    <option value="2307058">MIC204-[02]-(18)</option>
+    <option value="2307059">MIC206-[01]-(0)</option>
+    <option value="2307060">MIC206-[02]-(8)</option>
+    <option value="2307061">MIC255-[01]-(4)</option>
+    <option value="2307062">MIC255-[02]-(2)</option>
+    <option value="2307063">MIC255-[03]-(0)</option>
+    <option value="2307064">MIC255-[04]-(2)</option>
+    <option value="2307065">MIC255-[05]-(13)</option>
+    <option value="2307066">MIC300-[01]-(13)</option>
+    <option value="2307067">MIC300-[02]-(0)</option>
+    <option value="2307068">MIC301-[01]-(20)</option>
+    <option value="2307069">MIC302-[01]-(0)</option>
+    <option value="2307070">MIC303-[01]-(19)</option>
+    <option value="2307071">MIC306-[01]-(0)</option>
+    <option value="2307072">MIC308-[01]-(0)</option>
+    <option value="2307073">MIC309-[01]-(-1)</option>
+    <option value="2307074">MIC310-[01]-(0)</option>
+    <option value="2307075">MIC355-[01]-(4)</option>
+    <option value="2307076">MIC355-[02]-(0)</option>
+    <option value="2307077">MIC355-[03]-(8)</option>
+    <option value="2306124">MIC400-[01]-(29)</option>
+    <option value="2307078">MIC401-[01]-(6)</option>
+    <option value="2307079">MIC402-[01]-(8)</option>
+    <option value="2307080">MIC403-[01]-(21)</option>
+    <option value="2307081">MIC405-[01]-(0)</option>
+    <option value="2307082">MIC406-[01]-(0)</option>
+    <option value="2306125">MIC450-[01]-(32)</option>
+    <option value="2307083">MIC455-[01]-(2)</option>
+    <option value="2307084">MIC455-[02]-(10)</option>
+    <option value="2307085">MIC455-[03]-(8)</option>
+    <option value="2308027">MKT201-[01]-(0)</option>
+    <option value="2308028">MKT201-[02]-(0)</option>
+    <option value="2308029">MKT201-[03]-(0)</option>
+    <option value="2308030">MKT201-[04]-(0)</option>
+    <option value="2308031">MKT201-[05]-(0)</option>
+    <option value="2308032">MKT201-[06]-(0)</option>
+    <option value="2308033">MKT301-[01]-(0)</option>
+    <option value="2308034">MKT301-[02]-(0)</option>
+    <option value="2308035">MKT301-[03]-(0)</option>
+    <option value="2308036">MKT301-[04]-(0)</option>
+    <option value="2308037">MKT301-[05]-(4)</option>
+    <option value="2308038">MKT301-[06]-(0)</option>
+    <option value="2308039">MKT421-[01]-(1)</option>
+    <option value="2308040">MKT423-[01]-(0)</option>
+    <option value="2308041">MKT424-[01]-(20)</option>
+    <option value="2308042">MKT425-[01]-(0)</option>
+    <option value="2308043">MKT426-[01]-(2)</option>
+    <option value="2308044">MKT428-[01]-(17)</option>
+    <option value="2308045">MKT431-[01]-(24)</option>
+    <option value="2308046">MSC221-[01]-(0)</option>
+    <option value="2308047">MSC221-[02]-(0)</option>
+    <option value="2308048">MSC221-[03]-(0)</option>
+    <option value="2308049">MSC221-[04]-(0)</option>
+    <option value="2308050">MSC221-[05]-(0)</option>
+    <option value="2308051">MSC221-[06]-(0)</option>
+    <option value="2308052">MSC301-[01]-(23)</option>
+    <option value="2308053">MSC301-[02]-(0)</option>
+    <option value="2308054">MSC301-[03]-(25)</option>
+    <option value="2308055">MSC301-[04]-(-1)</option>
+    <option value="2308056">MSC321-[01]-(0)</option>
+    <option value="2308057">MSC321-[02]-(0)</option>
+    <option value="2308058">MSC422-[01]-(30)</option>
+    <option value="2308059">MSC442-[01]-(25)</option>
+    <option value="2308060">MSC443-[01]-(20)</option>
+    <option value="2308061">MSC444-[01]-(20)</option>
+    <option value="2308062">MSC445-[01]-(17)</option>
+    <option value="2308063">MSC449-[01]-(18)</option>
+    <option value="2308132">PHI521-[01]-(20)</option>
+    <option value="2307483">PHY101-[01]-(1)</option>
+    <option value="2308297">PHY101-[01-OM]-(-1)</option>
+    <option value="2308106">PHY102-[01]-(39)</option>
+    <option value="2308109">PHY102-[02]-(30)</option>
+    <option value="2307484">PHY110-[01]-(37)</option>
+    <option value="2307592">PHY115-[01]-(23)</option>
+    <option value="2307593">PHY305-[01]-(36)</option>
+    <option value="2306121">PHY400-[01]-(39)</option>
+    <option value="2307594">PHY401-[01]-(35)</option>
+    <option value="2307646">POL101-[01]-(0)</option>
+    <option value="2308308">POL101-[01-OM]-(-2)</option>
+    <option value="2308190">POL101-[02]-(0)</option>
+    <option value="2307738">POL101-[03]-(0)</option>
+    <option value="2307741">POL101-[04]-(0)</option>
+    <option value="2307743">POL101-[06]-(0)</option>
+    <option value="2307730">POL101-[07]-(0)</option>
+    <option value="2307734">POL101-[08]-(0)</option>
+    <option value="2307753">POL101-[09]-(0)</option>
+    <option value="2307720">POL102-[01]-(18)</option>
+    <option value="2308316">POL102-[01-OM]-(-1)</option>
+    <option value="2307733">POL102-[02]-(13)</option>
+    <option value="2307762">POL102-[03]-(21)</option>
+    <option value="2308311">POL201-[01-OM]-(-1)</option>
+    <option value="2307755">POL202-[01]-(9)</option>
+    <option value="2307748">PSY101-[01]-(0)</option>
+    <option value="2308301">PSY101-[01-OM]-(-3)</option>
+    <option value="2307749">PSY101-[02]-(0)</option>
+    <option value="2307731">PSY101-[03]-(0)</option>
+    <option value="2307736">PSY101-[04]-(0)</option>
+    <option value="2307735">PSY101-[05]-(0)</option>
+    <option value="2307718">PSY101-[07]-(0)</option>
+    <option value="2307719">PSY101-[08]-(0)</option>
+    <option value="2308102">PSY421-[01]-(31)</option>
+    <option value="2307836">SOC101-[01]-(0)</option>
+    <option value="2307880">SOC101-[02]-(1)</option>
+    <option value="2307882">SOC101-[03]-(0)</option>
+    <option value="2307886">SOC101-[04]-(0)</option>
+    <option value="2307902">SOC101-[05]-(0)</option>
+    <option value="2307895">SOC101-[06]-(0)</option>
+    <option value="2307835">SOC101-[07]-(0)</option>
+    <option value="2307879">SOC101-[08]-(0)</option>
+    <option value="2307828">SOC101-[09]-(0)</option>
+    <option value="2307893">SOC101-[10]-(0)</option>
+    <option value="2307844">SOC101-[11]-(0)</option>
+    <option value="2308206">SOC350-[01]-(20)</option>
+    <option value="2308208">SOC420-[01]-(20)</option>
+    <option value="2307665">STA101-[01]-(0)</option>
+    <option value="2307666">STA101-[02]-(0)</option>
+    <option value="2307668">STA101-[04]-(0)</option>
+    <option value="2307669">STA101-[05]-(0)</option>
+    <option value="2307670">STA101-[06]-(0)</option>
+    <option value="2307671">STA101-[07]-(0)</option>
+    <option value="2307672">STA101-[08]-(0)</option>
+    <option value="2307673">STA101-[09]-(0)</option>
+    <option value="2307674">STA101-[10]-(0)</option>
+    <option value="2307675">STA101-[11]-(0)</option>
+    <option value="2307676">STA101-[12]-(0)</option>
+    </select>
