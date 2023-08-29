@@ -14,12 +14,12 @@ const { successResponse, errorResponse } = require('./controllers/response.contr
 // importing routes
 const scheduleRoutes = require('./routes/schedule.routes');
 const loginRoutes = require('./routes/login.routes');
+const corsOptions = require('./config/cors');
 
 //importing environment variables
-
 app.use(cookieParser());
 app.use(rateLimiter);
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

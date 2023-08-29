@@ -33,6 +33,47 @@ const getSessionId = async (session, verifiedCookie) => {
 	}
 };
 
+// const fetchSchedule = async (session, verifiedCookie) => {
+// 	// const sessionId = await getSessionId(session, verifiedCookie);
+// 	const sessionId = 627122;
+// 	const jsessionid = verifiedCookie.JSESSIONID;
+// 	const srvname = verifiedCookie.SRVNAME;
+
+// 	console.log('1', session, sessionId, jsessionid, srvname);
+// 	const url = `https://usis.bracu.ac.bd/academia/studentCourse/showClassScheduleInTabularFormatInGrid?query=&academiaSession=${sessionId}&_search=false&nd=1693148419192&rows=-1&page=1&sidx=course_code&sord=asc`;
+// 	var myHeaders = new Headers();
+// 	myHeaders.append('Accept', 'application/json, text/javascript, */*; q=0.01');
+// 	myHeaders.append('Accept-Language', 'en-US,en;q=0.9');
+// 	myHeaders.append('Connection', 'keep-alive');
+// 	myHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
+// 	myHeaders.append('Referer', 'https://usis.bracu.ac.bd/academia/dashBoard/show');
+// 	myHeaders.append('Sec-Fetch-Dest', 'empty');
+// 	myHeaders.append('Sec-Fetch-Mode', 'cors');
+// 	myHeaders.append('Sec-Fetch-Site', 'same-origin');
+// 	myHeaders.append(
+// 		'User-Agent',
+// 		'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+// 	);
+// 	myHeaders.append('X-Requested-With', 'XMLHttpRequest');
+// 	myHeaders.append('sec-ch-ua', '"Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"');
+// 	myHeaders.append('sec-ch-ua-mobile', '?0');
+// 	myHeaders.append('sec-ch-ua-platform', '"macOS"');
+// 	myHeaders.append('Cookie', `JSESSIONID=${jsessionid}; SRVNAME=${srvname}`);
+
+// 	var requestOptions = {
+// 		method: 'GET',
+// 		headers: myHeaders,
+// 		redirect: 'follow',
+// 	};
+
+// 	try {
+// 		const response = await fetch(url, requestOptions);
+// 		const text = await response.text();
+// 		return text;
+// 	} catch (error) {
+// 		throw error;
+// 	}
+// };
 const fetchSchedule = async (session, verifiedCookie) => {
 	// const sessionId = await getSessionId(session, verifiedCookie);
 	const sessionId = 627122;
@@ -41,6 +82,7 @@ const fetchSchedule = async (session, verifiedCookie) => {
 	console.log('1', session, sessionId, jsessionid, srvname);
 	const url = `https://usis.bracu.ac.bd/academia/studentCourse/showClassScheduleInTabularFormatInGrid?query=&academiaSession=${sessionId}&_search=false&nd=1693148419192&rows=-1&page=1&sidx=course_code&sord=asc`;
 	const config = {
+		withCredentials: true,
 		headers: {
 			Accept: 'application/json, text/javascript, */*; q=0.01',
 			'Accept-Language': 'en-US,en;q=0.9',

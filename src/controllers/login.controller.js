@@ -3,12 +3,9 @@ const { successResponse } = require('./response.controller');
 
 const handleLogin = async (req, res, next) => {
 	try {
-		//clear existing cookies
-		res.clearCookie('JSESSIONID');
-		res.clearCookie('SRVNAME');
-
 		//getting the inital verification cookie by making a GET request to the login page
-		let verificationCookie = await fetchVerificationCookie();
+		const response = await fetchVerificationCookie();
+		let verificationCookie = response.headers['set-cookie'];
 		res.cookie(verificationCookie[1]);
 
 		const jsessionid = verificationCookie[0].split(';')[0].split('=')[1];
@@ -19,19 +16,37 @@ const handleLogin = async (req, res, next) => {
 		};
 
 		//getting the verified cookies by making a POST request to the login page
-		const verifiedCookies = await fetchVerifiedCookie(verificationCookie);
-		if (verifiedCookies) {
-			verifiedCookies.forEach((cookie) => {
+		const response2 = await fetchVerifiedCookie(verificationCookie);
+		const verifiedCookie = response2.headers['set-cookie'];
+		if (verifiedCookie) {
+			verifiedCookie.forEach((cookie) => {
 				res.cookie(cookie);
 			});
+
 			return successResponse(res, {
 				statusCode: 200,
 				message: 'Login successful',
-				payload: { verifiedCookies, verificationCookie },
+				payload: {
+					verifiedCookie,
+					verificationCookie,
+				},
 			});
 		}
 	} catch (err) {
 		next(err);
 	}
 };
-module.exports = { handleLogin };
+
+const showLogin = async (req, res, next) => {
+	try {
+		const response = await fetchVerificationCookie();
+		const cookies = response.headers['set-cookie'];
+		cookies.forEach((cookie) => {
+			res.cookie(cookie);
+		});
+		res.send(response.data);
+	} catch (err) {
+		next(err);
+	}
+};
+module.exports = { handleLogin, showLogin };
