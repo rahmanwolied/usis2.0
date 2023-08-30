@@ -1,27 +1,24 @@
-const createError = require('http-errors');
+const readCookie = require('../helper/readCookie');
 const { successResponse } = require('../controllers/response.controller');
 const { fetchSchedule } = require('../services/fetchSchedule');
+const getSessionId = require('../services/fetchSessionId');
 
 const handleGetSchedule = async (req, res, next) => {
 	try {
-		let cookies = req.headers['cookie'];
-		if (cookies === undefined || cookies === null) {
-			throw createError(401, 'Unauthorized');
-		}
-		cookies = cookies.split(';');
-		cookies = {
-			JSESSIONID: cookies[0].split('=')[1],
-			SRVNAME: cookies[1].split('=')[1],
-		};
+		const session = req.query.session;
+		console.log(session);
 
-		console.log(cookies);
-		const response = await fetchSchedule('Fall 2023', cookies);
+		const cookies = readCookie({ verified: true });
+
+		const sessionId = await getSessionId(session, cookies);
+		const response = await fetchSchedule(sessionId, cookies);
 
 		return successResponse(res, {
 			statusCode: 200,
 			message: 'Schedule fetched successfully',
 			payload: {
-				cookies: cookies,
+				session,
+				sessionId,
 				response,
 			},
 		});

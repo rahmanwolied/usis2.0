@@ -9,6 +9,13 @@ async function fetchVerifiedCookie_Puppeteer() {
 	const browser = await puppeteer.launch({ headless: 'new' });
 	const page = await browser.newPage();
 
+	await page.setRequestInterception(true);
+	page.on('request', (request) => {
+		//abort requests for content that take too long to load
+		if (request.resourceType() === 'image' || request.resourceType() === 'stylesheet' || request.resourceType() === 'font') request.abort();
+		else request.continue();
+	});
+
 	await page.goto('https://usis.bracu.ac.bd/academia/');
 
 	const verificationCookies = await page.cookies();
@@ -19,7 +26,7 @@ async function fetchVerifiedCookie_Puppeteer() {
 	const login = '#ctl00_leftColumn_ctl00_btnLogin';
 	await page.click(login);
 
-	await page.waitForSelector('#student-class-schedule-dashboard-div');
+	// await page.waitForSelector('#student-class-schedule-dashboard-div');
 	console.log('Logged in successfully');
 
 	const verifiedCookies = await page.cookies();
