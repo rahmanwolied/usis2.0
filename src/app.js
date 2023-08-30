@@ -29,8 +29,8 @@ app.get('/', (req, res, next) => {
 });
 
 //handling routes
-app.use('/api/schedule', scheduleRoutes);
-app.use('/api/login', loginRoutes);
+app.use('/academia/schedule', scheduleRoutes);
+app.use('/academia/login', loginRoutes);
 
 // 404 error handler
 app.use((req, res, next) => {

@@ -1,37 +1,43 @@
 const { fetchVerificationCookie, fetchVerifiedCookie } = require('../services/fetchCookies');
+const fetchVerifiedCookie_Puppeteer = require('../services/fetchVerifiedCookie');
 const { successResponse } = require('./response.controller');
 
+const useAPI = false;
 const handleLogin = async (req, res, next) => {
 	try {
-		//getting the inital verification cookie by making a GET request to the login page
-		const response = await fetchVerificationCookie();
-		let verificationCookie = response.headers['set-cookie'];
-		res.cookie(verificationCookie[1]);
+		if (useAPI) {
+			//getting the inital verification cookie by making a GET request to the login page
+			const response = await fetchVerificationCookie();
+			let verificationCookie = response.headers['set-cookie'];
+			res.cookie(verificationCookie[1]);
 
-		const jsessionid = verificationCookie[0].split(';')[0].split('=')[1];
-		const srvname = verificationCookie[1].split(';')[0].split('=')[1];
-		verificationCookie = {
-			JSESSIONID: jsessionid,
-			SRVNAME: srvname,
-		};
+			const jsessionid = verificationCookie[0].split(';')[0].split('=')[1];
+			const srvname = verificationCookie[1].split(';')[0].split('=')[1];
+			verificationCookie = {
+				JSESSIONID: jsessionid,
+				SRVNAME: srvname,
+			};
 
-		//getting the verified cookies by making a POST request to the login page
-		const response2 = await fetchVerifiedCookie(verificationCookie);
-		const verifiedCookie = response2.headers['set-cookie'];
-		if (verifiedCookie) {
-			verifiedCookie.forEach((cookie) => {
-				res.cookie(cookie);
-			});
-
-			return successResponse(res, {
-				statusCode: 200,
-				message: 'Login successful',
-				payload: {
-					verifiedCookie,
-					verificationCookie,
-				},
-			});
+			//getting the verified cookies by making a POST request to the login page
+			const response2 = await fetchVerifiedCookie(verificationCookie);
+			const verifiedCookie = response2.headers['set-cookie'];
+			if (verifiedCookie) {
+				verifiedCookie.forEach((cookie) => {
+					res.cookie(cookie);
+				});
+			}
+		} else {
+			const cookies = await fetchVerifiedCookie_Puppeteer();
+			console.log(cookies);
 		}
+		return successResponse(res, {
+			statusCode: 200,
+			message: 'Login successful',
+			payload: {
+				verifiedCookie,
+				verificationCookie,
+			},
+		});
 	} catch (err) {
 		next(err);
 	}

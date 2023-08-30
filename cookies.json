@@ -1,0 +1,62 @@
+{
+	"verificationCookies": [
+		{
+			"name": "SRVNAME",
+			"value": "USISA",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/",
+			"expires": -1,
+			"size": 12,
+			"httpOnly": false,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		},
+		{
+			"name": "JSESSIONID",
+			"value": "1A7D0C184C4EE5F4032E202168A2FE02",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/academia",
+			"expires": -1,
+			"size": 42,
+			"httpOnly": true,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		}
+	],
+	"verifiedCookies": [
+		{
+			"name": "SRVNAME",
+			"value": "USISA",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/",
+			"expires": -1,
+			"size": 12,
+			"httpOnly": false,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		},
+		{
+			"name": "JSESSIONID",
+			"value": "D5E5DEDC7E566F9ABD278ED218959219",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/academia",
+			"expires": -1,
+			"size": 42,
+			"httpOnly": true,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		}
+	]
+}
