@@ -1,1 +1,62 @@
-{"verificationCookies":[{"name":"SRVNAME","value":"USISE","domain":"usis.bracu.ac.bd","path":"/","expires":-1,"size":12,"httpOnly":false,"secure":false,"session":true,"sameParty":false,"sourceScheme":"Secure","sourcePort":443},{"name":"JSESSIONID","value":"9350458CEE2D8F4EDFB44CB6D1707E77","domain":"usis.bracu.ac.bd","path":"/academia","expires":-1,"size":42,"httpOnly":true,"secure":false,"session":true,"sameParty":false,"sourceScheme":"Secure","sourcePort":443}],"verifiedCookies":[{"name":"SRVNAME","value":"USISE","domain":"usis.bracu.ac.bd","path":"/","expires":-1,"size":12,"httpOnly":false,"secure":false,"session":true,"sameParty":false,"sourceScheme":"Secure","sourcePort":443},{"name":"JSESSIONID","value":"B32546E64406F8DE6AFFF2E297D5D88C","domain":"usis.bracu.ac.bd","path":"/academia","expires":-1,"size":42,"httpOnly":true,"secure":false,"session":true,"sameParty":false,"sourceScheme":"Secure","sourcePort":443}]}
+{
+	"verificationCookies": [
+		{
+			"name": "SRVNAME",
+			"value": "USISA",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/",
+			"expires": -1,
+			"size": 12,
+			"httpOnly": false,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		},
+		{
+			"name": "JSESSIONID",
+			"value": "E9D9CA48C7FE4C9C213B720FCF62353B",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/academia",
+			"expires": -1,
+			"size": 42,
+			"httpOnly": true,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		}
+	],
+	"verifiedCookies": [
+		{
+			"name": "SRVNAME",
+			"value": "USISA",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/",
+			"expires": -1,
+			"size": 12,
+			"httpOnly": false,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		},
+		{
+			"name": "JSESSIONID",
+			"value": "8061D4C685A3E3AF36032CE3E84487B2",
+			"domain": "usis.bracu.ac.bd",
+			"path": "/academia",
+			"expires": -1,
+			"size": 42,
+			"httpOnly": true,
+			"secure": false,
+			"session": true,
+			"sameParty": false,
+			"sourceScheme": "Secure",
+			"sourcePort": 443
+		}
+	]
+}

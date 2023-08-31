@@ -4,7 +4,7 @@ const fetchSchedule = async (sessionId, verifiedCookie) => {
 	const jsessionid = verifiedCookie.JSESSIONID;
 	const srvname = verifiedCookie.SRVNAME;
 
-	const url = `https://usis.bracu.ac.bd/academia/studentCourse/showClassScheduleInTabularFormatInGrid?query=&academiaSession=${sessionId}&_search=false&nd=1693148419192&rows=-1&page=1&sidx=course_code&sord=asc`;
+	const url = `https://usis.bracu.ac.bd/academia/academicSection/listAcademicSectionWithSchedule?academiaSession=${sessionId}&rows=-1&page=1`;
 	const config = {
 		withCredentials: true,
 		headers: {

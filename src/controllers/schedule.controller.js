@@ -2,6 +2,7 @@ const readCookie = require('../helper/readCookie');
 const { successResponse } = require('../controllers/response.controller');
 const { fetchSchedule } = require('../services/fetchSchedule');
 const getSessionId = require('../services/fetchSessionId');
+const { cleanSchedule } = require('../helper/cleanResponse');
 
 const handleGetSchedule = async (req, res, next) => {
 	try {
@@ -12,6 +13,7 @@ const handleGetSchedule = async (req, res, next) => {
 
 		const sessionId = await getSessionId(session, cookies);
 		const response = await fetchSchedule(sessionId, cookies);
+		const schedule = cleanSchedule(response);
 
 		return successResponse(res, {
 			statusCode: 200,
@@ -19,7 +21,7 @@ const handleGetSchedule = async (req, res, next) => {
 			payload: {
 				session,
 				sessionId,
-				response,
+				schedule,
 			},
 		});
 	} catch (err) {
